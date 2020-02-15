@@ -66,12 +66,14 @@
             this.consultarOrdenToolStripMenuItem.Name = "consultarOrdenToolStripMenuItem";
             this.consultarOrdenToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.consultarOrdenToolStripMenuItem.Text = "Consultar Orden";
+            this.consultarOrdenToolStripMenuItem.Click += new System.EventHandler(this.consultarOrdenToolStripMenuItem_Click);
             // 
             // verTodasLasOrdenesToolStripMenuItem
             // 
             this.verTodasLasOrdenesToolStripMenuItem.Name = "verTodasLasOrdenesToolStripMenuItem";
             this.verTodasLasOrdenesToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
             this.verTodasLasOrdenesToolStripMenuItem.Text = "Ver todas las ordenes";
+            this.verTodasLasOrdenesToolStripMenuItem.Click += new System.EventHandler(this.verTodasLasOrdenesToolStripMenuItem_Click);
             // 
             // ampliarOrdenToolStripMenuItem
             // 
@@ -84,6 +86,7 @@
             this.creditosToolStripMenuItem.Name = "creditosToolStripMenuItem";
             this.creditosToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.creditosToolStripMenuItem.Text = "Creditos";
+            this.creditosToolStripMenuItem.Click += new System.EventHandler(this.creditosToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
