@@ -36,5 +36,10 @@ namespace PizzeriaGestionDePedidos
         {
 
         }
+
+        private void tbNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

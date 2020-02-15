@@ -41,11 +41,11 @@
             this.rbRefresco = new System.Windows.Forms.RadioButton();
             this.rbOtro = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tbIngredientes = new System.Windows.Forms.TextBox();
-            this.lbIngredientes = new System.Windows.Forms.Label();
-            this.btAgregar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.tbDescripcion = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbIngredientes = new System.Windows.Forms.Label();
+            this.tbIngredientes = new System.Windows.Forms.TextBox();
+            this.btAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,7 @@
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(100, 20);
             this.tbNombre.TabIndex = 1;
+            this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
             // tbPrecio
             // 
@@ -162,30 +163,12 @@
             this.panel1.Size = new System.Drawing.Size(432, 280);
             this.panel1.TabIndex = 10;
             // 
-            // tbIngredientes
+            // tbDescripcion
             // 
-            this.tbIngredientes.Location = new System.Drawing.Point(149, 174);
-            this.tbIngredientes.Name = "tbIngredientes";
-            this.tbIngredientes.Size = new System.Drawing.Size(100, 20);
-            this.tbIngredientes.TabIndex = 7;
-            // 
-            // lbIngredientes
-            // 
-            this.lbIngredientes.AutoSize = true;
-            this.lbIngredientes.Location = new System.Drawing.Point(75, 174);
-            this.lbIngredientes.Name = "lbIngredientes";
-            this.lbIngredientes.Size = new System.Drawing.Size(68, 13);
-            this.lbIngredientes.TabIndex = 8;
-            this.lbIngredientes.Text = "Ingredientes:";
-            // 
-            // btAgregar
-            // 
-            this.btAgregar.Location = new System.Drawing.Point(584, 365);
-            this.btAgregar.Name = "btAgregar";
-            this.btAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btAgregar.TabIndex = 11;
-            this.btAgregar.Text = "Agregar";
-            this.btAgregar.UseVisualStyleBackColor = true;
+            this.tbDescripcion.Location = new System.Drawing.Point(149, 104);
+            this.tbDescripcion.Name = "tbDescripcion";
+            this.tbDescripcion.Size = new System.Drawing.Size(100, 20);
+            this.tbDescripcion.TabIndex = 10;
             // 
             // label3
             // 
@@ -196,12 +179,30 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Descripción:";
             // 
-            // tbDescripcion
+            // lbIngredientes
             // 
-            this.tbDescripcion.Location = new System.Drawing.Point(149, 104);
-            this.tbDescripcion.Name = "tbDescripcion";
-            this.tbDescripcion.Size = new System.Drawing.Size(100, 20);
-            this.tbDescripcion.TabIndex = 10;
+            this.lbIngredientes.AutoSize = true;
+            this.lbIngredientes.Location = new System.Drawing.Point(75, 174);
+            this.lbIngredientes.Name = "lbIngredientes";
+            this.lbIngredientes.Size = new System.Drawing.Size(68, 13);
+            this.lbIngredientes.TabIndex = 8;
+            this.lbIngredientes.Text = "Ingredientes:";
+            // 
+            // tbIngredientes
+            // 
+            this.tbIngredientes.Location = new System.Drawing.Point(149, 174);
+            this.tbIngredientes.Name = "tbIngredientes";
+            this.tbIngredientes.Size = new System.Drawing.Size(100, 20);
+            this.tbIngredientes.TabIndex = 7;
+            // 
+            // btAgregar
+            // 
+            this.btAgregar.Location = new System.Drawing.Point(584, 365);
+            this.btAgregar.Name = "btAgregar";
+            this.btAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btAgregar.TabIndex = 11;
+            this.btAgregar.Text = "Agregar";
+            this.btAgregar.UseVisualStyleBackColor = true;
             // 
             // AgregarProducto
             // 
