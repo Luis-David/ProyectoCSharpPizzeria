@@ -34,5 +34,12 @@ namespace PizzeriaGestionDePedidos
             ListarOrdenes lo = new ListarOrdenes();
             lo.Visible = true;
         }
+
+        private void nuevaOrdenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevaOrden nueva = new NuevaOrden();
+            nueva.Owner = this;
+            nueva.ShowDialog();
+        }
     }
 }

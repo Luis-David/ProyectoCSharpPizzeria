@@ -62,6 +62,7 @@
             this.nuevaOrdenToolStripMenuItem.Name = "nuevaOrdenToolStripMenuItem";
             this.nuevaOrdenToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.nuevaOrdenToolStripMenuItem.Text = "Nueva Orden ";
+            this.nuevaOrdenToolStripMenuItem.Click += new System.EventHandler(this.nuevaOrdenToolStripMenuItem_Click);
             // 
             // consultarOrdenToolStripMenuItem
             // 
