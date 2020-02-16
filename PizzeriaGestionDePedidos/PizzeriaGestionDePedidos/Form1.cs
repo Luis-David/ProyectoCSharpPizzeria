@@ -25,7 +25,8 @@ namespace PizzeriaGestionDePedidos
         private void consultarOrdenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConsultarOrden co = new ConsultarOrden();
-            co.Visible = true;
+            co.Owner = this;
+            co.ShowDialog();
         }
 
         private void verTodasLasOrdenesToolStripMenuItem_Click(object sender, EventArgs e)
