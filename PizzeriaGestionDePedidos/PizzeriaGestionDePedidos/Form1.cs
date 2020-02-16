@@ -41,5 +41,7 @@ namespace PizzeriaGestionDePedidos
             nueva.Owner = this;
             nueva.ShowDialog();
         }
+
+
     }
 }

@@ -30,9 +30,9 @@
         {
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.pizzasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.medianaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Pizza_Grande = new System.Windows.Forms.ToolStripMenuItem();
+            this.Pizza_Mediana = new System.Windows.Forms.ToolStripMenuItem();
+            this.Pizza_Chica = new System.Windows.Forms.ToolStripMenuItem();
             this.refrescosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cocaColaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,8 +43,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Menu_Pizzas_Grande = new System.Windows.Forms.CheckedListBox();
-            this.Fotos_Pizzas = new System.Windows.Forms.PictureBox();
             this.Descrip_Pizzas = new System.Windows.Forms.TextBox();
+            this.Menu_Pizza_Mediana = new System.Windows.Forms.CheckedListBox();
+            this.Menu_Pizza_Chica = new System.Windows.Forms.CheckedListBox();
+            this.Fotos_Pizzas = new System.Windows.Forms.PictureBox();
             this.menuStrip3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Fotos_Pizzas)).BeginInit();
             this.SuspendLayout();
@@ -63,30 +65,33 @@
             // pizzasToolStripMenuItem
             // 
             this.pizzasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.grandeToolStripMenuItem,
-            this.medianaToolStripMenuItem,
-            this.chicaToolStripMenuItem});
+            this.Pizza_Grande,
+            this.Pizza_Mediana,
+            this.Pizza_Chica});
             this.pizzasToolStripMenuItem.Name = "pizzasToolStripMenuItem";
             this.pizzasToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.pizzasToolStripMenuItem.Text = "Pizzas";
             // 
-            // grandeToolStripMenuItem
+            // Pizza_Grande
             // 
-            this.grandeToolStripMenuItem.Name = "grandeToolStripMenuItem";
-            this.grandeToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.grandeToolStripMenuItem.Text = "Grande";
+            this.Pizza_Grande.Name = "Pizza_Grande";
+            this.Pizza_Grande.Size = new System.Drawing.Size(120, 22);
+            this.Pizza_Grande.Text = "Grande";
+            this.Pizza_Grande.Click += new System.EventHandler(this.Pizza_Grande_Click);
             // 
-            // medianaToolStripMenuItem
+            // Pizza_Mediana
             // 
-            this.medianaToolStripMenuItem.Name = "medianaToolStripMenuItem";
-            this.medianaToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.medianaToolStripMenuItem.Text = "Mediana";
+            this.Pizza_Mediana.Name = "Pizza_Mediana";
+            this.Pizza_Mediana.Size = new System.Drawing.Size(120, 22);
+            this.Pizza_Mediana.Text = "Mediana";
+            this.Pizza_Mediana.Click += new System.EventHandler(this.Pizza_Mediana_Click);
             // 
-            // chicaToolStripMenuItem
+            // Pizza_Chica
             // 
-            this.chicaToolStripMenuItem.Name = "chicaToolStripMenuItem";
-            this.chicaToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.chicaToolStripMenuItem.Text = "Chica";
+            this.Pizza_Chica.Name = "Pizza_Chica";
+            this.Pizza_Chica.Size = new System.Drawing.Size(120, 22);
+            this.Pizza_Chica.Text = "Chica";
+            this.Pizza_Chica.Click += new System.EventHandler(this.Pizza_Chica_Click);
             // 
             // refrescosToolStripMenuItem
             // 
@@ -171,16 +176,7 @@
             this.Menu_Pizzas_Grande.Size = new System.Drawing.Size(173, 79);
             this.Menu_Pizzas_Grande.TabIndex = 6;
             this.Menu_Pizzas_Grande.Visible = false;
-            // 
-            // Fotos_Pizzas
-            // 
-            this.Fotos_Pizzas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Fotos_Pizzas.Location = new System.Drawing.Point(480, 116);
-            this.Fotos_Pizzas.Name = "Fotos_Pizzas";
-            this.Fotos_Pizzas.Size = new System.Drawing.Size(169, 79);
-            this.Fotos_Pizzas.TabIndex = 7;
-            this.Fotos_Pizzas.TabStop = false;
-            this.Fotos_Pizzas.Visible = false;
+            this.Menu_Pizzas_Grande.SelectedIndexChanged += new System.EventHandler(this.Menu_Pizzas_Grande_SelectedIndexChanged);
             // 
             // Descrip_Pizzas
             // 
@@ -190,6 +186,52 @@
             this.Descrip_Pizzas.Size = new System.Drawing.Size(199, 79);
             this.Descrip_Pizzas.TabIndex = 8;
             this.Descrip_Pizzas.Visible = false;
+            this.Descrip_Pizzas.TextChanged += new System.EventHandler(this.Descrip_Pizzas_TextChanged);
+            // 
+            // Menu_Pizza_Mediana
+            // 
+            this.Menu_Pizza_Mediana.FormattingEnabled = true;
+            this.Menu_Pizza_Mediana.Items.AddRange(new object[] {
+            "Pepperoni\t\t$80",
+            "Hawaiana\t\t$80",
+            "Carnes Frías\t\t$100",
+            "Mexicana\t\t$100",
+            "Cuatro Quesos\t\t$100"});
+            this.Menu_Pizza_Mediana.Location = new System.Drawing.Point(232, 201);
+            this.Menu_Pizza_Mediana.Name = "Menu_Pizza_Mediana";
+            this.Menu_Pizza_Mediana.Size = new System.Drawing.Size(173, 79);
+            this.Menu_Pizza_Mediana.TabIndex = 9;
+            this.Menu_Pizza_Mediana.Visible = false;
+            this.Menu_Pizza_Mediana.SelectedIndexChanged += new System.EventHandler(this.Menu_Pizza_Mediana_SelectedIndexChanged);
+            // 
+            // Menu_Pizza_Chica
+            // 
+            this.Menu_Pizza_Chica.FormattingEnabled = true;
+            this.Menu_Pizza_Chica.Items.AddRange(new object[] {
+            "Pepperoni\t\t$60",
+            "Hawaiana\t\t$60",
+            "Carnes Frías\t\t$80",
+            "Mexicana\t\t$80",
+            "Cuatro Quesos\t\t$80"});
+            this.Menu_Pizza_Chica.Location = new System.Drawing.Point(27, 201);
+            this.Menu_Pizza_Chica.Name = "Menu_Pizza_Chica";
+            this.Menu_Pizza_Chica.Size = new System.Drawing.Size(173, 79);
+            this.Menu_Pizza_Chica.TabIndex = 10;
+            this.Menu_Pizza_Chica.Visible = false;
+            this.Menu_Pizza_Chica.SelectedIndexChanged += new System.EventHandler(this.Menu_Pizza_Chica_SelectedIndexChanged);
+            // 
+            // Fotos_Pizzas
+            // 
+            this.Fotos_Pizzas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Fotos_Pizzas.ImageLocation = "";
+            this.Fotos_Pizzas.Location = new System.Drawing.Point(480, 116);
+            this.Fotos_Pizzas.Name = "Fotos_Pizzas";
+            this.Fotos_Pizzas.Size = new System.Drawing.Size(169, 79);
+            this.Fotos_Pizzas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Fotos_Pizzas.TabIndex = 7;
+            this.Fotos_Pizzas.TabStop = false;
+            this.Fotos_Pizzas.Visible = false;
+            this.Fotos_Pizzas.Click += new System.EventHandler(this.Fotos_Pizzas_Click);
             // 
             // NuevaOrden
             // 
@@ -197,6 +239,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(698, 337);
+            this.Controls.Add(this.Menu_Pizza_Chica);
+            this.Controls.Add(this.Menu_Pizza_Mediana);
             this.Controls.Add(this.Descrip_Pizzas);
             this.Controls.Add(this.Fotos_Pizzas);
             this.Controls.Add(this.Menu_Pizzas_Grande);
@@ -216,9 +260,9 @@
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip3;
         private System.Windows.Forms.ToolStripMenuItem pizzasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem grandeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem medianaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem chicaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Pizza_Grande;
+        private System.Windows.Forms.ToolStripMenuItem Pizza_Mediana;
+        private System.Windows.Forms.ToolStripMenuItem Pizza_Chica;
         private System.Windows.Forms.ToolStripMenuItem refrescosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cocaColaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem spriteToolStripMenuItem;
@@ -231,5 +275,7 @@
         private System.Windows.Forms.CheckedListBox Menu_Pizzas_Grande;
         private System.Windows.Forms.PictureBox Fotos_Pizzas;
         private System.Windows.Forms.TextBox Descrip_Pizzas;
+        private System.Windows.Forms.CheckedListBox Menu_Pizza_Mediana;
+        private System.Windows.Forms.CheckedListBox Menu_Pizza_Chica;
     }
 }
