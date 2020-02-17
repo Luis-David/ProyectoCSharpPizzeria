@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace PizzeriaGestionDePedidos
 {
-    class Producto
+    public class Producto
     {
+        long id;
         string nombre;
         double precio;
         string descripción;
-
+        string urlImagen;
         public Producto() { }
         public Producto(String nombre, double precio) {
             Nombre = nombre;
@@ -20,7 +21,7 @@ namespace PizzeriaGestionDePedidos
 
         public string Nombre
         {
-            get { return nombre;}
+            get { return nombre; }
             set { nombre = value; }
         }
         public double Precio
@@ -32,6 +33,16 @@ namespace PizzeriaGestionDePedidos
         {
             get { return descripción; }
             set { descripción = value; }
+        }
+        public long ID
+        {
+            get{return id;}
+            set { id = value; }
+        }
+        public string UrlImagen
+        {
+            get { return urlImagen; }
+            set { urlImagen = value; }
         }
     }
 }

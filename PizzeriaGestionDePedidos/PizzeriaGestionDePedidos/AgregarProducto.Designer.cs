@@ -29,25 +29,32 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarProducto));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.tbPrecio = new System.Windows.Forms.TextBox();
-            this.tbSize = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbSize = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.rbPizza = new System.Windows.Forms.RadioButton();
             this.rbRefresco = new System.Windows.Forms.RadioButton();
-            this.rbOtro = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbSize = new System.Windows.Forms.ComboBox();
+            this.tbLitros = new System.Windows.Forms.TextBox();
+            this.lbLitros = new System.Windows.Forms.Label();
+            this.btImagen = new System.Windows.Forms.Button();
             this.tbDescripcion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbIngredientes = new System.Windows.Forms.Label();
             this.tbIngredientes = new System.Windows.Forms.TextBox();
             this.btAgregar = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btRegresar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -69,13 +76,6 @@
             this.tbPrecio.Name = "tbPrecio";
             this.tbPrecio.Size = new System.Drawing.Size(100, 20);
             this.tbPrecio.TabIndex = 2;
-            // 
-            // tbSize
-            // 
-            this.tbSize.Location = new System.Drawing.Point(149, 136);
-            this.tbSize.Name = "tbSize";
-            this.tbSize.Size = new System.Drawing.Size(100, 20);
-            this.tbSize.TabIndex = 3;
             // 
             // label1
             // 
@@ -115,7 +115,7 @@
             // rbPizza
             // 
             this.rbPizza.AutoSize = true;
-            this.rbPizza.Location = new System.Drawing.Point(94, 129);
+            this.rbPizza.Location = new System.Drawing.Point(39, 24);
             this.rbPizza.Name = "rbPizza";
             this.rbPizza.Size = new System.Drawing.Size(50, 17);
             this.rbPizza.TabIndex = 7;
@@ -127,27 +127,22 @@
             // rbRefresco
             // 
             this.rbRefresco.AutoSize = true;
-            this.rbRefresco.Location = new System.Drawing.Point(94, 161);
+            this.rbRefresco.Location = new System.Drawing.Point(39, 57);
             this.rbRefresco.Name = "rbRefresco";
             this.rbRefresco.Size = new System.Drawing.Size(68, 17);
             this.rbRefresco.TabIndex = 8;
             this.rbRefresco.TabStop = true;
             this.rbRefresco.Text = "Refresco";
             this.rbRefresco.UseVisualStyleBackColor = true;
-            // 
-            // rbOtro
-            // 
-            this.rbOtro.AutoSize = true;
-            this.rbOtro.Location = new System.Drawing.Point(94, 195);
-            this.rbOtro.Name = "rbOtro";
-            this.rbOtro.Size = new System.Drawing.Size(45, 17);
-            this.rbOtro.TabIndex = 9;
-            this.rbOtro.TabStop = true;
-            this.rbOtro.Text = "Otro";
-            this.rbOtro.UseVisualStyleBackColor = true;
+            this.rbRefresco.CheckedChanged += new System.EventHandler(this.rbRefresco_CheckedChanged);
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cbSize);
+            this.panel1.Controls.Add(this.tbLitros);
+            this.panel1.Controls.Add(this.lbLitros);
+            this.panel1.Controls.Add(this.btImagen);
             this.panel1.Controls.Add(this.tbDescripcion);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lbIngredientes);
@@ -155,13 +150,51 @@
             this.panel1.Controls.Add(this.tbNombre);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tbPrecio);
-            this.panel1.Controls.Add(this.tbSize);
             this.panel1.Controls.Add(this.lbSize);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(217, 56);
+            this.panel1.Location = new System.Drawing.Point(138, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(432, 280);
+            this.panel1.Size = new System.Drawing.Size(309, 310);
             this.panel1.TabIndex = 10;
+            // 
+            // cbSize
+            // 
+            this.cbSize.FormattingEnabled = true;
+            this.cbSize.Items.AddRange(new object[] {
+            "Chica",
+            "Mediana",
+            "Grande",
+            "Familiar"});
+            this.cbSize.Location = new System.Drawing.Point(149, 136);
+            this.cbSize.Name = "cbSize";
+            this.cbSize.Size = new System.Drawing.Size(121, 21);
+            this.cbSize.TabIndex = 14;
+            // 
+            // tbLitros
+            // 
+            this.tbLitros.Location = new System.Drawing.Point(149, 136);
+            this.tbLitros.Name = "tbLitros";
+            this.tbLitros.Size = new System.Drawing.Size(100, 20);
+            this.tbLitros.TabIndex = 13;
+            // 
+            // lbLitros
+            // 
+            this.lbLitros.AutoSize = true;
+            this.lbLitros.Location = new System.Drawing.Point(103, 139);
+            this.lbLitros.Name = "lbLitros";
+            this.lbLitros.Size = new System.Drawing.Size(35, 13);
+            this.lbLitros.TabIndex = 12;
+            this.lbLitros.Text = "Litros:";
+            // 
+            // btImagen
+            // 
+            this.btImagen.Location = new System.Drawing.Point(80, 256);
+            this.btImagen.Name = "btImagen";
+            this.btImagen.Size = new System.Drawing.Size(169, 23);
+            this.btImagen.TabIndex = 11;
+            this.btImagen.Text = "Cargar Imagen";
+            this.btImagen.UseVisualStyleBackColor = true;
+            this.btImagen.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbDescripcion
             // 
@@ -197,28 +230,60 @@
             // 
             // btAgregar
             // 
-            this.btAgregar.Location = new System.Drawing.Point(584, 365);
+            this.btAgregar.Location = new System.Drawing.Point(699, 359);
             this.btAgregar.Name = "btAgregar";
             this.btAgregar.Size = new System.Drawing.Size(75, 23);
             this.btAgregar.TabIndex = 11;
             this.btAgregar.Text = "Agregar";
             this.btAgregar.UseVisualStyleBackColor = true;
+            this.btAgregar.Click += new System.EventHandler(this.btAgregar_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btRegresar
+            // 
+            this.btRegresar.Location = new System.Drawing.Point(618, 359);
+            this.btRegresar.Name = "btRegresar";
+            this.btRegresar.Size = new System.Drawing.Size(75, 23);
+            this.btRegresar.TabIndex = 13;
+            this.btRegresar.Text = "Regresar";
+            this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::PizzeriaGestionDePedidos.Properties.Resources.no_imagen;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(524, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 223);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // AgregarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btRegresar);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btAgregar);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.rbOtro);
             this.Controls.Add(this.rbRefresco);
             this.Controls.Add(this.rbPizza);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AgregarProducto";
             this.Text = "AgregarProducto";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,7 +294,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.TextBox tbPrecio;
-        private System.Windows.Forms.TextBox tbSize;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbSize;
@@ -239,9 +303,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbIngredientes;
         private System.Windows.Forms.TextBox tbIngredientes;
-        private System.Windows.Forms.RadioButton rbOtro;
         private System.Windows.Forms.Button btAgregar;
         private System.Windows.Forms.TextBox tbDescripcion;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btImagen;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btRegresar;
+        private System.Windows.Forms.TextBox tbLitros;
+        private System.Windows.Forms.Label lbLitros;
+        private System.Windows.Forms.ComboBox cbSize;
     }
 }

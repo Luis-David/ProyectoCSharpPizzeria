@@ -7,6 +7,7 @@ namespace PizzeriaGestionDePedidos
 {
     class Orden
     {
+        long id;
         List<Producto> productos;
         List<int> cantidades;
         DateTime fecha;
@@ -47,6 +48,11 @@ namespace PizzeriaGestionDePedidos
             }
             cadena += "\nTotal: " + getTotal();
             return cadena;
+        }
+        public long ID
+        {
+            get { return id; }
+            set { id = value; }
         }
     }
 }

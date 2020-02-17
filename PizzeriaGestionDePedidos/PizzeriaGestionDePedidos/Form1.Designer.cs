@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nuevaOrdenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarOrdenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,6 +83,7 @@
             this.ampliarOrdenToolStripMenuItem.Name = "ampliarOrdenToolStripMenuItem";
             this.ampliarOrdenToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
             this.ampliarOrdenToolStripMenuItem.Text = "Ampliar Catálogo";
+            this.ampliarOrdenToolStripMenuItem.Click += new System.EventHandler(this.ampliarOrdenToolStripMenuItem_Click);
             // 
             // creditosToolStripMenuItem
             // 
@@ -109,10 +111,12 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::PizzeriaGestionDePedidos.Properties.Resources.dominos_pizza_cyber_monday_jpg;
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = global::PizzeriaGestionDePedidos.Properties.Resources.dominos_pizza_cyber_monday;
+            this.pictureBox3.InitialImage = global::PizzeriaGestionDePedidos.Properties.Resources.dominos_pizza_cyber_monday;
             this.pictureBox3.Location = new System.Drawing.Point(0, 27);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(516, 312);
+            this.pictureBox3.Size = new System.Drawing.Size(538, 312);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -125,6 +129,7 @@
             this.ClientSize = new System.Drawing.Size(677, 342);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Pizzeria El Becario";

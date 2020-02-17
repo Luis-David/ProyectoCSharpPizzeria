@@ -9,17 +9,22 @@ namespace PizzeriaGestionDePedidos
     class Pizza : Producto
     {
         string ingredientes;
+        char size;
         public Pizza() { }
         public Pizza(String nombre,double precio, string ingredientes):base(nombre,precio) {
-            Ingrediente = ingredientes;
+            Ingredientes = ingredientes;
         }
 
-        public string Ingrediente
+        public string Ingredientes
         {
             get { return ingredientes; }
             set { ingredientes = value; }
         }
-
+        public char Size
+        {
+            get { return size; }
+            set { size = value; }
+        }
 
     }
 }

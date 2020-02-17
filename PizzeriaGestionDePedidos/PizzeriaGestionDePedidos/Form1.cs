@@ -34,5 +34,12 @@ namespace PizzeriaGestionDePedidos
             ListarOrdenes lo = new ListarOrdenes();
             lo.Visible = true;
         }
+
+        private void ampliarOrdenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarProducto co = new AgregarProducto();
+            co.Owner = this;
+            co.ShowDialog();
+        }
     }
 }
