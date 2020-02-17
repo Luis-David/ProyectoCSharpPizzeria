@@ -16,6 +16,8 @@ namespace PizzeriaGestionDePedidos
         public NuevaOrden()
         {
             InitializeComponent();
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -32,11 +34,19 @@ namespace PizzeriaGestionDePedidos
 
         private void Menu_Pizzas_Grande_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-                Fotos_Pizzas.Visible = true;
-                Fotos_Pizzas.ImageLocation = "C:/Users/damia/source/repos/ProyectoCSharpPizzeria/PizzeriaGestionDePedidos/PizzeriaGestionDePedidos/img/pepperoni.jpg";
             
+
+            //Menu_Pizzas_Grande.CheckedItems.IndexOf();
+           
+            if (Menu_Pizzas_Grande.GetItemChecked(0)){
+                string medida = "Grande";
+                string especialidad = "Peperoni";
+                int precio = 100;
+                PizzaO p1 = new PizzaO(especialidad, medida, precio);
+            }
+
+
+     
 
         }
 
@@ -93,5 +103,60 @@ namespace PizzeriaGestionDePedidos
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DatosDeLaOrden_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
+    public class PizzaO
+    {
+        string Especialidad;
+        string Medida;
+        int Precio;
+        int Cantidad;
+
+        public PizzaO(string especialidad,string medida,int precio)
+        {
+            Especialidad = especialidad;
+            Medida = medida;
+            Precio = precio;
+            Cantidad = 1;
+
+        }
+
+    }
+
+
+    public class OrdenP
+    {
+        int NumeroO;
+        string Medida;
+        string Especialidad;
+        string Refresco;
+
+
+        public OrdenP(int numeroO, string medida,string especialidad, string refresco)
+        {
+            NumeroO = numeroO;
+            Medida = medida;
+            Especialidad = especialidad;
+            Refresco = refresco;
+        }
+
+    }
+
+
 }
