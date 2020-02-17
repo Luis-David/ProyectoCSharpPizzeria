@@ -35,11 +35,13 @@ namespace PizzeriaGestionDePedidos
             lo.Visible = true;
         }
 
-        private void ampliarOrdenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nuevaOrdenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AgregarProducto co = new AgregarProducto();
-            co.Owner = this;
-            co.ShowDialog();
+            NuevaOrden nueva = new NuevaOrden();
+            nueva.Owner = this;
+            nueva.ShowDialog();
         }
+
+
     }
 }

@@ -157,6 +157,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="img\Pepperoni.jpg" />
     <Content Include="pizzza.ico" />
     <None Include="Resources\no-imagen2.jpg" />
     <None Include="Resources\dominos_pizza_cyber_monday.jpg" />

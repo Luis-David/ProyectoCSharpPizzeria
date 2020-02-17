@@ -63,6 +63,7 @@
             this.nuevaOrdenToolStripMenuItem.Name = "nuevaOrdenToolStripMenuItem";
             this.nuevaOrdenToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.nuevaOrdenToolStripMenuItem.Text = "Nueva Orden ";
+            this.nuevaOrdenToolStripMenuItem.Click += new System.EventHandler(this.nuevaOrdenToolStripMenuItem_Click);
             // 
             // consultarOrdenToolStripMenuItem
             // 
@@ -120,6 +121,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
+         
             // 
             // Form1
             // 

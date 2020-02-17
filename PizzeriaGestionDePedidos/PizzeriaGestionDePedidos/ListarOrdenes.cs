@@ -16,5 +16,12 @@ namespace PizzeriaGestionDePedidos
         {
             InitializeComponent();
         }
+
+        private void ListarOrdenes_Load(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+            //label2.Text = ;
+
+        }
     }
 }
