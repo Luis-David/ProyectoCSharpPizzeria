@@ -24,13 +24,21 @@ namespace PizzeriaGestionDePedidos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int contenido;
-            contenido = Convert.ToInt32(textBox1.Text);
+            int contenido = 0;
+
+            try
+            {
+                contenido = Convert.ToInt32(textBox1.Text);
+            }
+            catch (FormatException formate)
+            {
+                MessageBox.Show("Debe ingresar un numero");
+            }
             //label2.Text = contenido;
             label2.Visible = true;
-            for (int i = 0; i < contenido ; i++)
+            for (int i = 0; i < contenido; i++)
             {
-                label2.Text = "Numero de pedido: "+ (i+1).ToString();
+                label2.Text = "Numero de pedido: " + (i + 1).ToString() + or.getInfo();
             }
         }
     }
