@@ -54,40 +54,54 @@ namespace PizzeriaGestionDePedidos
         }
         public List<Orden> getOrdenes()
         {
-            List<Orden> ordenes=null;
+            List<Orden> ordenes = new List<Orden>();
             List<Producto> productos = new List<Producto>();
             con.Open();
             coman = new NpgsqlCommand("select * from orden;", con);
             resp = new NpgsqlDataAdapter(coman);
             DataTable tOrden = new DataTable();
             resp.Fill(tOrden);
+            resp = null;
             Orden orden;
             Pizza pizza;
-            string query;
             Refresco refrescos;
-            foreach(DataRow rowOrden in tOrden.Rows)
+            foreach (DataRow rowOrden in tOrden.Rows)
             {
-                orden = new Orden(Convert.ToDateTime(rowOrden["fecha"]),Convert.ToInt32(rowOrden["num_ficha"]));
+                orden = new Orden(Convert.ToDateTime(rowOrden["fecha"]), Convert.ToInt32(rowOrden["num_ficha"]));
                 orden.ID = Convert.ToInt64(rowOrden["id"]);
-                coman = new NpgsqlCommand("select * from orden_pizzas where fk_orden=" + orden.ID + ";");
+                coman = new NpgsqlCommand("select * from orden_pizzas where fk_orden=" + orden.ID + ";", con);
                 resp = new NpgsqlDataAdapter(coman);
                 DataTable tOrdenPizzas = new DataTable();
                 resp.Fill(tOrdenPizzas);
-                foreach(DataRow rowOrPi in tOrdenPizzas.Rows)
+                foreach (DataRow rowOrPi in tOrdenPizzas.Rows)
                 {
-                    coman = new NpgsqlCommand("select * from pizzas where id=" + rowOrPi["fk_pizza"] + ";");
+                    coman = new NpgsqlCommand("select * from pizzas where id=" + rowOrPi["fk_pizza"] + ";", con);
                     resp = new NpgsqlDataAdapter(coman);
                     DataTable tp = new DataTable();
                     resp.Fill(tp);
-                    pizza = new Pizza((string)tp.Rows[0]["nombre"], Convert.ToDouble(tp.Rows[0]["precio"]),(string)tp.Rows[0]["ingredientes"]);
-                    pizza.Size =Convert.ToChar( tp.Rows[0]["size"]);
+                    pizza = new Pizza((string)tp.Rows[0]["nombre"], Convert.ToDouble(tp.Rows[0]["precio"]), (string)tp.Rows[0]["ingredientes"]);
+                    pizza.Size = Convert.ToChar(tp.Rows[0]["size"]);
                     orden.agregarProducto(pizza, Convert.ToInt32(rowOrPi["cantidad"]));
-
                 }
-                ordenes.Add(orden);
+                coman = new NpgsqlCommand("select * from orden_refrescos where fk_orden=" + orden.ID + ";", con);
+                resp = new NpgsqlDataAdapter(coman);
+                DataTable tOrdenRefrescos = new DataTable();
+                resp.Fill(tOrdenRefrescos);
+                foreach (DataRow rowOrRe in tOrdenRefrescos.Rows)
+                {
+                    coman = new NpgsqlCommand("select * from refrescos where id=" + rowOrRe["fk_refrescos"] + ";", con);
+                    resp = new NpgsqlDataAdapter(coman);
+                    DataTable tr = new DataTable();
+                    resp.Fill(tr);
+                    refrescos = new Refresco((string)tr.Rows[0]["nombre"], Convert.ToDouble(tr.Rows[0]["precio"]), Convert.ToInt32(tr.Rows[0]["litros"]));
+                    orden.agregarProducto(refrescos, Convert.ToInt32(rowOrRe["cantidad"]));
+                }
+
+                if (orden.Productos.Count > 0)
+                    ordenes.Add(orden);
             }
 
-
+            con.Close();
             return ordenes;
         }
         public List<Producto> getProductos()

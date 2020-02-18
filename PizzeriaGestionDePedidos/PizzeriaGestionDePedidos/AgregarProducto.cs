@@ -122,10 +122,9 @@ namespace PizzeriaGestionDePedidos
                 }
                 if (producto != null)
                 {
-                    bdPizzeria.guardarProducto(producto);
                     FileInfo f = new FileInfo(openFileDialog1.FileName);
                     f.CopyTo(producto.UrlImagen);
-
+                    bdPizzeria.guardarProducto(producto);
                     MessageBox.Show("Se agregó correctamente el nuevo producto. ");
                     limipiarVentana();
                 }
