@@ -300,60 +300,194 @@ namespace PizzeriaGestionDePedidos
                 listBox1.Items.Add(s);
             }
 
-            //Refrescos
+            //Refrescos 2Lts.
             r = new Refresco();
             if (ListaRefrescos.GetItemChecked(0))
             {
-                r.Precio = 15;
+                r.Precio = 35;
                 r.Nombre = "Coca Cola";
-                or.agregarProducto(r, indice);
+                count = Convert.ToInt32(numericUpDown16.Value);
+                or.agregarProducto(r, count);
                 orden.Add(or);
             }
 
             r = new Refresco();
             if (ListaRefrescos.GetItemChecked(1))
             {
-                r.Precio = 15;
+                r.Precio = 35;
                 r.Nombre = "Pepsi";
-                or.agregarProducto(r, indice);
+                count = Convert.ToInt32(numericUpDown17.Value);
+                or.agregarProducto(pg, count);
                 orden.Add(or);
             }
             r = new Refresco();
             if (ListaRefrescos.GetItemChecked(2))
             {
-                r.Precio = 15;
+                r.Precio = 30;
                 r.Nombre = "Manzanita";
-                or.agregarProducto(r, indice);
+                count = Convert.ToInt32(numericUpDown18.Value);
+                or.agregarProducto(pg, count);
                 orden.Add(or);
             }
 
             r = new Refresco();
             if (ListaRefrescos.GetItemChecked(3))
             {
-                r.Precio = 15;
+                r.Precio = 30;
                 r.Nombre = "7Up";
-                or.agregarProducto(r, indice);
+                count = Convert.ToInt32(numericUpDown19.Value);
+                or.agregarProducto(pg, count);
                 orden.Add(or);
             }
 
             r = new Refresco();
             if (ListaRefrescos.GetItemChecked(4))
             {
-                r.Precio = 15;
+                r.Precio = 25;
                 r.Nombre = "Mirinda";
-                or.agregarProducto(r, indice);
+                count = Convert.ToInt32(numericUpDown20.Value);
+                or.agregarProducto(pg, count);
                 orden.Add(or);
             }
 
             r = new Refresco();
             if (ListaRefrescos.GetItemChecked(5))
             {
-                r.Precio = 15;
+                r.Precio = 25;
                 r.Nombre = "Sangria";
-                or.agregarProducto(r, indice);
+                count = Convert.ToInt32(numericUpDown21.Value);
+                or.agregarProducto(pg, count);
                 orden.Add(or);
             }
             foreach (string m in ListaRefrescos.CheckedItems)
+            {
+                listBox1.Items.Add(m);
+            }
+
+            //Refrescos 1Lt.
+            r = new Refresco();
+            if (refrescos1.GetItemChecked(0))
+            {
+                r.Precio = 25;
+                r.Nombre = "Coca Cola";
+                count = Convert.ToInt32(numericUpDown22.Value);
+                or.agregarProducto(r, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos1.GetItemChecked(1))
+            {
+                r.Precio = 25;
+                r.Nombre = "Pepsi";
+                count = Convert.ToInt32(numericUpDown23.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+            r = new Refresco();
+            if (refrescos1.GetItemChecked(2))
+            {
+                r.Precio = 20;
+                r.Nombre = "Manzanita";
+                count = Convert.ToInt32(numericUpDown24.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos1.GetItemChecked(3))
+            {
+                r.Precio = 20;
+                r.Nombre = "7Up";
+                count = Convert.ToInt32(numericUpDown25.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos1.GetItemChecked(4))
+            {
+                r.Precio = 20;
+                r.Nombre = "Mirinda";
+                count = Convert.ToInt32(numericUpDown26.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos1.GetItemChecked(5))
+            {
+                r.Precio = 20;
+                r.Nombre = "Sangria";
+                count = Convert.ToInt32(numericUpDown27.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+            foreach (string m in refrescos1.CheckedItems)
+            {
+                listBox1.Items.Add(m);
+            }
+
+            //Refrescos 375ml.
+            r = new Refresco();
+            if (refrescos375.GetItemChecked(0))
+            {
+                r.Precio = 20;
+                r.Nombre = "Coca Cola";
+                count = Convert.ToInt32(numericUpDown28.Value);
+                or.agregarProducto(r, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos375.GetItemChecked(1))
+            {
+                r.Precio = 20;
+                r.Nombre = "Pepsi";
+                count = Convert.ToInt32(numericUpDown29.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+            r = new Refresco();
+            if (refrescos375.GetItemChecked(2))
+            {
+                r.Precio = 15;
+                r.Nombre = "Manzanita";
+                count = Convert.ToInt32(numericUpDown30.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos375.GetItemChecked(3))
+            {
+                r.Precio = 15;
+                r.Nombre = "7Up";
+                count = Convert.ToInt32(numericUpDown31.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos375.GetItemChecked(4))
+            {
+                r.Precio = 15;
+                r.Nombre = "Mirinda";
+                count = Convert.ToInt32(numericUpDown32.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+
+            r = new Refresco();
+            if (refrescos375.GetItemChecked(5))
+            {
+                r.Precio = 15;
+                r.Nombre = "Sangria";
+                count = Convert.ToInt32(numericUpDown33.Value);
+                or.agregarProducto(pg, count);
+                orden.Add(or);
+            }
+            foreach (string m in refrescos375.CheckedItems)
             {
                 listBox1.Items.Add(m);
             }

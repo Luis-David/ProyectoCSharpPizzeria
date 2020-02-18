@@ -64,10 +64,22 @@
             this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.refrescos1 = new System.Windows.Forms.CheckedListBox();
+            this.refrescos375 = new System.Windows.Forms.CheckedListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown29 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown31 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown32 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown33 = new System.Windows.Forms.NumericUpDown();
             this.menuStrip3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -90,6 +102,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip3
@@ -99,7 +123,7 @@
             this.refrescosToolStripMenuItem});
             this.menuStrip3.Location = new System.Drawing.Point(0, 0);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(707, 24);
+            this.menuStrip3.Size = new System.Drawing.Size(825, 24);
             this.menuStrip3.TabIndex = 3;
             this.menuStrip3.Text = "menuStrip3";
             // 
@@ -119,7 +143,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(611, 223);
+            this.button1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(716, 314);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -129,6 +154,7 @@
             // 
             // Menu_Pizzas_Grande
             // 
+            this.Menu_Pizzas_Grande.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Menu_Pizzas_Grande.FormattingEnabled = true;
             this.Menu_Pizzas_Grande.Items.AddRange(new object[] {
             "Pepperoni\t\t$100",
@@ -136,15 +162,16 @@
             "Carnes Frías\t\t$120",
             "Mexicana\t\t$120",
             "Cuatro Quesos\t\t$120"});
-            this.Menu_Pizzas_Grande.Location = new System.Drawing.Point(12, 47);
+            this.Menu_Pizzas_Grande.Location = new System.Drawing.Point(14, 49);
             this.Menu_Pizzas_Grande.Name = "Menu_Pizzas_Grande";
-            this.Menu_Pizzas_Grande.Size = new System.Drawing.Size(173, 79);
+            this.Menu_Pizzas_Grande.Size = new System.Drawing.Size(231, 94);
             this.Menu_Pizzas_Grande.TabIndex = 6;
             this.Menu_Pizzas_Grande.Visible = false;
             this.Menu_Pizzas_Grande.SelectedIndexChanged += new System.EventHandler(this.Menu_Pizzas_Grande_SelectedIndexChanged);
             // 
             // Menu_Pizza_Mediana
             // 
+            this.Menu_Pizza_Mediana.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Menu_Pizza_Mediana.FormattingEnabled = true;
             this.Menu_Pizza_Mediana.Items.AddRange(new object[] {
             "Pepperoni\t\t$80",
@@ -152,15 +179,16 @@
             "Carnes Frías\t\t$100",
             "Mexicana\t\t$100",
             "Cuatro Quesos\t\t$100"});
-            this.Menu_Pizza_Mediana.Location = new System.Drawing.Point(12, 150);
+            this.Menu_Pizza_Mediana.Location = new System.Drawing.Point(14, 181);
             this.Menu_Pizza_Mediana.Name = "Menu_Pizza_Mediana";
-            this.Menu_Pizza_Mediana.Size = new System.Drawing.Size(173, 79);
+            this.Menu_Pizza_Mediana.Size = new System.Drawing.Size(229, 94);
             this.Menu_Pizza_Mediana.TabIndex = 9;
             this.Menu_Pizza_Mediana.Visible = false;
             this.Menu_Pizza_Mediana.SelectedIndexChanged += new System.EventHandler(this.Menu_Pizza_Mediana_SelectedIndexChanged);
             // 
             // Menu_Pizza_Chica
             // 
+            this.Menu_Pizza_Chica.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Menu_Pizza_Chica.FormattingEnabled = true;
             this.Menu_Pizza_Chica.Items.AddRange(new object[] {
             "Pepperoni\t\t$60",
@@ -168,26 +196,27 @@
             "Carnes Frías\t\t$80",
             "Mexicana\t\t$80",
             "Cuatro Quesos\t\t$80"});
-            this.Menu_Pizza_Chica.Location = new System.Drawing.Point(12, 249);
+            this.Menu_Pizza_Chica.Location = new System.Drawing.Point(12, 314);
             this.Menu_Pizza_Chica.Name = "Menu_Pizza_Chica";
-            this.Menu_Pizza_Chica.Size = new System.Drawing.Size(173, 79);
+            this.Menu_Pizza_Chica.Size = new System.Drawing.Size(231, 94);
             this.Menu_Pizza_Chica.TabIndex = 10;
             this.Menu_Pizza_Chica.Visible = false;
             this.Menu_Pizza_Chica.SelectedIndexChanged += new System.EventHandler(this.Menu_Pizza_Chica_SelectedIndexChanged);
             // 
             // ListaRefrescos
             // 
+            this.ListaRefrescos.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListaRefrescos.FormattingEnabled = true;
             this.ListaRefrescos.Items.AddRange(new object[] {
-            "CocaCola",
-            "Pepsi",
-            "Manzanita",
-            "7up",
-            "Merinda",
-            "Sangria"});
-            this.ListaRefrescos.Location = new System.Drawing.Point(273, 47);
+            "CocaCola\t$35",
+            "Pepsi\t\t$35",
+            "Manzanita\t$30",
+            "7up\t\t$30",
+            "Merinda\t\t$25",
+            "Sangria\t\t$25"});
+            this.ListaRefrescos.Location = new System.Drawing.Point(340, 47);
             this.ListaRefrescos.Name = "ListaRefrescos";
-            this.ListaRefrescos.Size = new System.Drawing.Size(168, 94);
+            this.ListaRefrescos.Size = new System.Drawing.Size(168, 112);
             this.ListaRefrescos.TabIndex = 11;
             this.ListaRefrescos.Visible = false;
             this.ListaRefrescos.SelectedIndexChanged += new System.EventHandler(this.ListaRefrescos_SelectedIndexChanged);
@@ -196,9 +225,10 @@
             // 
             this.labelGrande.AutoSize = true;
             this.labelGrande.BackColor = System.Drawing.Color.White;
+            this.labelGrande.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGrande.Location = new System.Drawing.Point(37, 31);
             this.labelGrande.Name = "labelGrande";
-            this.labelGrande.Size = new System.Drawing.Size(80, 13);
+            this.labelGrande.Size = new System.Drawing.Size(91, 13);
             this.labelGrande.TabIndex = 12;
             this.labelGrande.Text = "Pizzas Grandes";
             this.labelGrande.Visible = false;
@@ -207,9 +237,10 @@
             // 
             this.labelMediana.AutoSize = true;
             this.labelMediana.BackColor = System.Drawing.Color.White;
-            this.labelMediana.Location = new System.Drawing.Point(37, 134);
+            this.labelMediana.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMediana.Location = new System.Drawing.Point(37, 158);
             this.labelMediana.Name = "labelMediana";
-            this.labelMediana.Size = new System.Drawing.Size(86, 13);
+            this.labelMediana.Size = new System.Drawing.Size(97, 13);
             this.labelMediana.TabIndex = 13;
             this.labelMediana.Text = "Pizzas Medianas";
             this.labelMediana.Visible = false;
@@ -218,9 +249,10 @@
             // 
             this.labelChica.AutoSize = true;
             this.labelChica.BackColor = System.Drawing.Color.White;
-            this.labelChica.Location = new System.Drawing.Point(37, 233);
+            this.labelChica.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChica.Location = new System.Drawing.Point(37, 289);
             this.labelChica.Name = "labelChica";
-            this.labelChica.Size = new System.Drawing.Size(72, 13);
+            this.labelChica.Size = new System.Drawing.Size(85, 13);
             this.labelChica.TabIndex = 14;
             this.labelChica.Text = "Pizzas Chicas";
             this.labelChica.Visible = false;
@@ -229,9 +261,10 @@
             // 
             this.labelRefrescos.AutoSize = true;
             this.labelRefrescos.BackColor = System.Drawing.Color.White;
-            this.labelRefrescos.Location = new System.Drawing.Point(322, 31);
+            this.labelRefrescos.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRefrescos.Location = new System.Drawing.Point(389, 31);
             this.labelRefrescos.Name = "labelRefrescos";
-            this.labelRefrescos.Size = new System.Drawing.Size(67, 13);
+            this.labelRefrescos.Size = new System.Drawing.Size(85, 13);
             this.labelRefrescos.TabIndex = 15;
             this.labelRefrescos.Text = "Refrecos 2lt.";
             this.labelRefrescos.Visible = false;
@@ -240,9 +273,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(556, 46);
+            this.label1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(651, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "Datos de la Orden";
             this.label1.Visible = false;
@@ -250,7 +284,8 @@
             // 
             // VerOrden
             // 
-            this.VerOrden.Location = new System.Drawing.Point(517, 223);
+            this.VerOrden.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VerOrden.Location = new System.Drawing.Point(622, 314);
             this.VerOrden.Name = "VerOrden";
             this.VerOrden.Size = new System.Drawing.Size(75, 23);
             this.VerOrden.TabIndex = 18;
@@ -262,7 +297,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(182, 47);
+            this.numericUpDown1.Location = new System.Drawing.Point(249, 47);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10,
             0,
@@ -274,7 +309,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(182, 63);
+            this.numericUpDown2.Location = new System.Drawing.Point(249, 67);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             10,
             0,
@@ -286,7 +321,7 @@
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(182, 73);
+            this.numericUpDown3.Location = new System.Drawing.Point(249, 87);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             10,
             0,
@@ -298,7 +333,7 @@
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(182, 89);
+            this.numericUpDown4.Location = new System.Drawing.Point(249, 107);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             10,
             0,
@@ -310,7 +345,7 @@
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(182, 106);
+            this.numericUpDown5.Location = new System.Drawing.Point(249, 127);
             this.numericUpDown5.Maximum = new decimal(new int[] {
             10,
             0,
@@ -323,14 +358,14 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(517, 63);
+            this.listBox1.Location = new System.Drawing.Point(616, 62);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(169, 147);
+            this.listBox1.Size = new System.Drawing.Size(184, 238);
             this.listBox1.TabIndex = 24;
             // 
             // numericUpDown6
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(182, 150);
+            this.numericUpDown6.Location = new System.Drawing.Point(249, 178);
             this.numericUpDown6.Maximum = new decimal(new int[] {
             10,
             0,
@@ -342,7 +377,7 @@
             // 
             // numericUpDown7
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(182, 166);
+            this.numericUpDown7.Location = new System.Drawing.Point(249, 197);
             this.numericUpDown7.Maximum = new decimal(new int[] {
             10,
             0,
@@ -354,7 +389,7 @@
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(182, 182);
+            this.numericUpDown8.Location = new System.Drawing.Point(249, 217);
             this.numericUpDown8.Maximum = new decimal(new int[] {
             10,
             0,
@@ -366,7 +401,7 @@
             // 
             // numericUpDown9
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(182, 198);
+            this.numericUpDown9.Location = new System.Drawing.Point(249, 237);
             this.numericUpDown9.Maximum = new decimal(new int[] {
             10,
             0,
@@ -378,7 +413,7 @@
             // 
             // numericUpDown10
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(182, 209);
+            this.numericUpDown10.Location = new System.Drawing.Point(249, 257);
             this.numericUpDown10.Maximum = new decimal(new int[] {
             10,
             0,
@@ -390,7 +425,7 @@
             // 
             // numericUpDown11
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(182, 249);
+            this.numericUpDown11.Location = new System.Drawing.Point(249, 313);
             this.numericUpDown11.Maximum = new decimal(new int[] {
             10,
             0,
@@ -402,7 +437,7 @@
             // 
             // numericUpDown12
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(182, 261);
+            this.numericUpDown12.Location = new System.Drawing.Point(249, 333);
             this.numericUpDown12.Maximum = new decimal(new int[] {
             10,
             0,
@@ -414,7 +449,7 @@
             // 
             // numericUpDown13
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(182, 275);
+            this.numericUpDown13.Location = new System.Drawing.Point(249, 352);
             this.numericUpDown13.Maximum = new decimal(new int[] {
             10,
             0,
@@ -426,7 +461,7 @@
             // 
             // numericUpDown14
             // 
-            this.numericUpDown14.Location = new System.Drawing.Point(182, 287);
+            this.numericUpDown14.Location = new System.Drawing.Point(249, 372);
             this.numericUpDown14.Maximum = new decimal(new int[] {
             10,
             0,
@@ -438,7 +473,7 @@
             // 
             // numericUpDown15
             // 
-            this.numericUpDown15.Location = new System.Drawing.Point(182, 305);
+            this.numericUpDown15.Location = new System.Drawing.Point(249, 392);
             this.numericUpDown15.Maximum = new decimal(new int[] {
             10,
             0,
@@ -450,7 +485,7 @@
             // 
             // numericUpDown16
             // 
-            this.numericUpDown16.Location = new System.Drawing.Point(435, 47);
+            this.numericUpDown16.Location = new System.Drawing.Point(503, 43);
             this.numericUpDown16.Maximum = new decimal(new int[] {
             10,
             0,
@@ -462,7 +497,7 @@
             // 
             // numericUpDown17
             // 
-            this.numericUpDown17.Location = new System.Drawing.Point(435, 63);
+            this.numericUpDown17.Location = new System.Drawing.Point(503, 62);
             this.numericUpDown17.Maximum = new decimal(new int[] {
             10,
             0,
@@ -474,7 +509,7 @@
             // 
             // numericUpDown18
             // 
-            this.numericUpDown18.Location = new System.Drawing.Point(435, 73);
+            this.numericUpDown18.Location = new System.Drawing.Point(503, 82);
             this.numericUpDown18.Maximum = new decimal(new int[] {
             10,
             0,
@@ -486,7 +521,7 @@
             // 
             // numericUpDown19
             // 
-            this.numericUpDown19.Location = new System.Drawing.Point(435, 89);
+            this.numericUpDown19.Location = new System.Drawing.Point(503, 102);
             this.numericUpDown19.Maximum = new decimal(new int[] {
             10,
             0,
@@ -498,7 +533,7 @@
             // 
             // numericUpDown20
             // 
-            this.numericUpDown20.Location = new System.Drawing.Point(435, 106);
+            this.numericUpDown20.Location = new System.Drawing.Point(503, 122);
             this.numericUpDown20.Maximum = new decimal(new int[] {
             10,
             0,
@@ -510,7 +545,7 @@
             // 
             // numericUpDown21
             // 
-            this.numericUpDown21.Location = new System.Drawing.Point(435, 121);
+            this.numericUpDown21.Location = new System.Drawing.Point(503, 139);
             this.numericUpDown21.Maximum = new decimal(new int[] {
             10,
             0,
@@ -520,45 +555,48 @@
             this.numericUpDown21.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown21.TabIndex = 40;
             // 
-            // checkedListBox1
+            // refrescos1
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "CocaCola",
-            "Pepsi",
-            "Manzanita",
-            "7up",
-            "Merinda",
-            "Sangria"});
-            this.checkedListBox1.Location = new System.Drawing.Point(273, 166);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(168, 94);
-            this.checkedListBox1.TabIndex = 41;
-            this.checkedListBox1.Visible = false;
+            this.refrescos1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refrescos1.FormattingEnabled = true;
+            this.refrescos1.Items.AddRange(new object[] {
+            "CocaCola\t$25",
+            "Pepsi\t\t$25",
+            "Manzanita\t$20",
+            "7up\t\t$20",
+            "Merinda\t\t$20",
+            "Sangria\t\t$20"});
+            this.refrescos1.Location = new System.Drawing.Point(341, 197);
+            this.refrescos1.Name = "refrescos1";
+            this.refrescos1.Size = new System.Drawing.Size(168, 112);
+            this.refrescos1.TabIndex = 41;
+            this.refrescos1.Visible = false;
             // 
-            // checkedListBox2
+            // refrescos375
             // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "CocaCola",
-            "Pepsi",
-            "Manzanita",
-            "7up",
-            "Merinda",
-            "Sangria"});
-            this.checkedListBox2.Location = new System.Drawing.Point(273, 298);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(168, 94);
-            this.checkedListBox2.TabIndex = 42;
-            this.checkedListBox2.Visible = false;
+            this.refrescos375.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refrescos375.FormattingEnabled = true;
+            this.refrescos375.Items.AddRange(new object[] {
+            "CocaCola\t$20",
+            "Pepsi\t\t$20",
+            "Manzanita\t$15",
+            "7up\t\t$15",
+            "Merinda\t\t$15",
+            "Sangria\t\t$15"});
+            this.refrescos375.Location = new System.Drawing.Point(340, 349);
+            this.refrescos375.Name = "refrescos375";
+            this.refrescos375.Size = new System.Drawing.Size(168, 112);
+            this.refrescos375.TabIndex = 42;
+            this.refrescos375.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(322, 144);
+            this.label2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(390, 175);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(85, 13);
             this.label2.TabIndex = 43;
             this.label2.Text = "Refrecos 1lt.";
             this.label2.Visible = false;
@@ -567,23 +605,180 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(322, 268);
+            this.label3.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(389, 320);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.Size = new System.Drawing.Size(97, 13);
             this.label3.TabIndex = 44;
             this.label3.Text = "Refrecos 365ml.";
             this.label3.Visible = false;
+            // 
+            // numericUpDown22
+            // 
+            this.numericUpDown22.Location = new System.Drawing.Point(503, 193);
+            this.numericUpDown22.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown22.Name = "numericUpDown22";
+            this.numericUpDown22.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown22.TabIndex = 45;
+            // 
+            // numericUpDown23
+            // 
+            this.numericUpDown23.Location = new System.Drawing.Point(503, 212);
+            this.numericUpDown23.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown23.Name = "numericUpDown23";
+            this.numericUpDown23.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown23.TabIndex = 46;
+            // 
+            // numericUpDown24
+            // 
+            this.numericUpDown24.Location = new System.Drawing.Point(503, 231);
+            this.numericUpDown24.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown24.Name = "numericUpDown24";
+            this.numericUpDown24.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown24.TabIndex = 47;
+            // 
+            // numericUpDown25
+            // 
+            this.numericUpDown25.Location = new System.Drawing.Point(503, 250);
+            this.numericUpDown25.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown25.Name = "numericUpDown25";
+            this.numericUpDown25.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown25.TabIndex = 48;
+            // 
+            // numericUpDown26
+            // 
+            this.numericUpDown26.Location = new System.Drawing.Point(503, 270);
+            this.numericUpDown26.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown26.Name = "numericUpDown26";
+            this.numericUpDown26.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown26.TabIndex = 49;
+            // 
+            // numericUpDown27
+            // 
+            this.numericUpDown27.Location = new System.Drawing.Point(503, 290);
+            this.numericUpDown27.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown27.Name = "numericUpDown27";
+            this.numericUpDown27.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown27.TabIndex = 50;
+            // 
+            // numericUpDown28
+            // 
+            this.numericUpDown28.Location = new System.Drawing.Point(503, 347);
+            this.numericUpDown28.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown28.Name = "numericUpDown28";
+            this.numericUpDown28.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown28.TabIndex = 51;
+            // 
+            // numericUpDown29
+            // 
+            this.numericUpDown29.Location = new System.Drawing.Point(503, 365);
+            this.numericUpDown29.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown29.Name = "numericUpDown29";
+            this.numericUpDown29.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown29.TabIndex = 52;
+            // 
+            // numericUpDown30
+            // 
+            this.numericUpDown30.Location = new System.Drawing.Point(503, 383);
+            this.numericUpDown30.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown30.Name = "numericUpDown30";
+            this.numericUpDown30.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown30.TabIndex = 53;
+            // 
+            // numericUpDown31
+            // 
+            this.numericUpDown31.Location = new System.Drawing.Point(503, 403);
+            this.numericUpDown31.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown31.Name = "numericUpDown31";
+            this.numericUpDown31.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown31.TabIndex = 54;
+            // 
+            // numericUpDown32
+            // 
+            this.numericUpDown32.Location = new System.Drawing.Point(503, 423);
+            this.numericUpDown32.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown32.Name = "numericUpDown32";
+            this.numericUpDown32.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown32.TabIndex = 55;
+            // 
+            // numericUpDown33
+            // 
+            this.numericUpDown33.Location = new System.Drawing.Point(503, 443);
+            this.numericUpDown33.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown33.Name = "numericUpDown33";
+            this.numericUpDown33.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown33.TabIndex = 56;
             // 
             // NuevaOrden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(707, 404);
+            this.ClientSize = new System.Drawing.Size(825, 496);
+            this.Controls.Add(this.numericUpDown33);
+            this.Controls.Add(this.numericUpDown32);
+            this.Controls.Add(this.numericUpDown31);
+            this.Controls.Add(this.numericUpDown30);
+            this.Controls.Add(this.numericUpDown29);
+            this.Controls.Add(this.numericUpDown28);
+            this.Controls.Add(this.numericUpDown27);
+            this.Controls.Add(this.numericUpDown26);
+            this.Controls.Add(this.numericUpDown25);
+            this.Controls.Add(this.numericUpDown24);
+            this.Controls.Add(this.numericUpDown23);
+            this.Controls.Add(this.numericUpDown22);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkedListBox2);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.refrescos375);
+            this.Controls.Add(this.refrescos1);
             this.Controls.Add(this.numericUpDown21);
             this.Controls.Add(this.numericUpDown20);
             this.Controls.Add(this.numericUpDown19);
@@ -643,6 +838,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -685,9 +892,21 @@
         private System.Windows.Forms.NumericUpDown numericUpDown19;
         private System.Windows.Forms.NumericUpDown numericUpDown20;
         private System.Windows.Forms.NumericUpDown numericUpDown21;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.CheckedListBox refrescos1;
+        private System.Windows.Forms.CheckedListBox refrescos375;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numericUpDown22;
+        private System.Windows.Forms.NumericUpDown numericUpDown23;
+        private System.Windows.Forms.NumericUpDown numericUpDown24;
+        private System.Windows.Forms.NumericUpDown numericUpDown25;
+        private System.Windows.Forms.NumericUpDown numericUpDown26;
+        private System.Windows.Forms.NumericUpDown numericUpDown27;
+        private System.Windows.Forms.NumericUpDown numericUpDown28;
+        private System.Windows.Forms.NumericUpDown numericUpDown29;
+        private System.Windows.Forms.NumericUpDown numericUpDown30;
+        private System.Windows.Forms.NumericUpDown numericUpDown31;
+        private System.Windows.Forms.NumericUpDown numericUpDown32;
+        private System.Windows.Forms.NumericUpDown numericUpDown33;
     }
 }
