@@ -16,6 +16,7 @@ namespace PizzeriaGestionDePedidos
         Orden or = new Orden();
         Pizza pg = new Pizza();
         Refresco r = new Refresco();
+        BDPizzeria bd = new BDPizzeria();
         //List<Orden> orden = new List<Orden>();
         List<NumericUpDown> textNumericos = new List<NumericUpDown>();
 
@@ -72,6 +73,7 @@ namespace PizzeriaGestionDePedidos
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(or.getInfo());
+            bd.guardarOrden(or);
             this.Close();
         }
         //*************************************ACCIONES PIZZA GRANDE++++++++++++++++++++++++++++
@@ -214,6 +216,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 100;
                 pg.Nombre = "Pepperoni";
+                pg.ID = 15;
                 count = Convert.ToInt32(numericUpDown1.Value);
                 or.agregarProducto(pg, count);
             }
@@ -223,6 +226,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 100;
                 pg.Nombre = "Hawaiana";
+                pg.ID = 12;
                 count = Convert.ToInt32(numericUpDown2.Value);
                 indice = count;
                 or.agregarProducto(pg, count);
@@ -234,6 +238,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 120;
                 pg.Nombre = "Carnes Frias";
+                pg.ID = 18;
                 count = Convert.ToInt32(numericUpDown3.Value);
                 or.agregarProducto(pg, count);
 
@@ -244,6 +249,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 120;
                 pg.Nombre = "Mexicana";
+                pg.ID = 21;
                 count = Convert.ToInt32(numericUpDown4.Value);
                 or.agregarProducto(pg, count);
 
@@ -254,6 +260,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 120;
                 pg.Nombre = "Cuatro Quesos";
+                pg.ID = 24;
                 count = Convert.ToInt32(numericUpDown5.Value);
                 or.agregarProducto(pg, count);
             }
@@ -268,6 +275,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 80;
                 pg.Nombre = "Pepperoni";
+                pg.ID = 16;
                 count = Convert.ToInt32(numericUpDown6.Value);
                 or.agregarProducto(pg, count);
             }
@@ -277,6 +285,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 80;
                 pg.Nombre = "Hawaiana";
+                pg.ID = 13;
                 count = Convert.ToInt32(numericUpDown7.Value);
                 indice = count;
                 or.agregarProducto(pg, count);
@@ -288,6 +297,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 100;
                 pg.Nombre = "Carnes Frias";
+                pg.ID = 19;
                 count = Convert.ToInt32(numericUpDown8.Value);
                 or.agregarProducto(pg, count);
 
@@ -298,6 +308,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 100;
                 pg.Nombre = "Mexicana";
+                pg.ID = 22;
                 count = Convert.ToInt32(numericUpDown9.Value);
                 or.agregarProducto(pg, count);
 
@@ -308,6 +319,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 100;
                 pg.Nombre = "Cuatro Quesos";
+                pg.ID = 25;
                 count = Convert.ToInt32(numericUpDown10.Value);
                 or.agregarProducto(pg, count);
             }
@@ -322,6 +334,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 60;
                 pg.Nombre = "Pepperoni";
+                pg.ID = 17;
                 count = Convert.ToInt32(numericUpDown11.Value);
                 or.agregarProducto(pg, count);
             }
@@ -331,6 +344,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 60;
                 pg.Nombre = "Hawaiana";
+                pg.ID = 14;
                 count = Convert.ToInt32(numericUpDown12.Value);
                 indice = count;
                 or.agregarProducto(pg, count);
@@ -342,6 +356,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 80;
                 pg.Nombre = "Carnes Frias";
+                pg.ID = 20;
                 count = Convert.ToInt32(numericUpDown13.Value);
                 or.agregarProducto(pg, count);
 
@@ -352,6 +367,7 @@ namespace PizzeriaGestionDePedidos
             {
                 pg.Precio = 80;
                 pg.Nombre = "Mexicana";
+                pg.ID = 23;
                 count = Convert.ToInt32(numericUpDown14.Value);
                 or.agregarProducto(pg, count);
 
@@ -361,6 +377,7 @@ namespace PizzeriaGestionDePedidos
             if (Menu_Pizza_Chica.GetItemChecked(4))
             {
                 pg.Precio = 80;
+                pg.ID = 26;
                 pg.Nombre = "Cuatro Quesos";
                 count = Convert.ToInt32(numericUpDown15.Value);
                 or.agregarProducto(pg, count);
@@ -377,6 +394,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 35;
                 r.Nombre = "Coca Cola";
+                r.ID = 6;
                 count = Convert.ToInt32(numericUpDown16.Value);
                 or.agregarProducto(r, count);
                 //orden.Add(or);
@@ -387,6 +405,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 35;
                 r.Nombre = "Pepsi";
+                r.ID = 9;
                 count = Convert.ToInt32(numericUpDown17.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -396,6 +415,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 30;
                 r.Nombre = "Manzanita";
+                r.ID = 12;
                 count = Convert.ToInt32(numericUpDown18.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -406,6 +426,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 30;
                 r.Nombre = "7Up";
+                r.ID = 15;
                 count = Convert.ToInt32(numericUpDown19.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -416,6 +437,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 25;
                 r.Nombre = "Mirinda";
+                r.ID = 18;
                 count = Convert.ToInt32(numericUpDown20.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -426,6 +448,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 25;
                 r.Nombre = "Sangria";
+                r.ID = 21;
                 count = Convert.ToInt32(numericUpDown21.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -441,6 +464,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 25;
                 r.Nombre = "Coca Cola";
+                r.ID = 7;
                 count = Convert.ToInt32(numericUpDown22.Value);
                 or.agregarProducto(r, count);
                 //orden.Add(or);
@@ -451,6 +475,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 25;
                 r.Nombre = "Pepsi";
+                r.ID = 10;
                 count = Convert.ToInt32(numericUpDown23.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -460,6 +485,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 20;
                 r.Nombre = "Manzanita";
+                r.ID = 13;
                 count = Convert.ToInt32(numericUpDown24.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -470,6 +496,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 20;
                 r.Nombre = "7Up";
+                r.ID = 16;
                 count = Convert.ToInt32(numericUpDown25.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -480,6 +507,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 20;
                 r.Nombre = "Mirinda";
+                r.ID = 19;
                 count = Convert.ToInt32(numericUpDown26.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -490,6 +518,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 20;
                 r.Nombre = "Sangria";
+                r.ID = 22;
                 count = Convert.ToInt32(numericUpDown27.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -505,6 +534,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 20;
                 r.Nombre = "Coca Cola";
+                r.ID = 8;
                 count = Convert.ToInt32(numericUpDown28.Value);
                 or.agregarProducto(r, count);
                 //orden.Add(or);
@@ -515,6 +545,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 20;
                 r.Nombre = "Pepsi";
+                r.ID = 11;
                 count = Convert.ToInt32(numericUpDown29.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -524,6 +555,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 15;
                 r.Nombre = "Manzanita";
+                r.ID = 14;
                 count = Convert.ToInt32(numericUpDown30.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -534,6 +566,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 15;
                 r.Nombre = "7Up";
+                r.ID = 17;
                 count = Convert.ToInt32(numericUpDown31.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -544,6 +577,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 15;
                 r.Nombre = "Mirinda";
+                r.ID = 20;
                 count = Convert.ToInt32(numericUpDown32.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -554,6 +588,7 @@ namespace PizzeriaGestionDePedidos
             {
                 r.Precio = 15;
                 r.Nombre = "Sangria";
+                r.ID = 23;
                 count = Convert.ToInt32(numericUpDown33.Value);
                 or.agregarProducto(pg, count);
                 //orden.Add(or);
@@ -564,8 +599,7 @@ namespace PizzeriaGestionDePedidos
             }
 
             listBox1.Items.Add("Total: " + or.getTotal());
-            BDPizzeria bd = new BDPizzeria();
-            bd.guardarOrden(or);
+            
         }
     }
 

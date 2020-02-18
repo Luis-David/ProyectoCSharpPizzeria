@@ -35,10 +35,10 @@ namespace PizzeriaGestionDePedidos
             resp = new NpgsqlDataAdapter(coman);
             DataTable tOrden = new DataTable();
             resp.Fill(tOrden);
-            long idOrden = Convert.ToInt64(tOrden.Rows[0]["id"]);
+            long idOrden = Convert.ToInt64(tOrden.Rows[0]["max"]);
 
 
-            // guardan las pizzas y refrescos
+            // se guardan las pizzas y refrescos
             int i = 0;
             query = "";
             foreach (Pizza p in or.Productos)
