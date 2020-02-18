@@ -33,7 +33,8 @@ namespace PizzeriaGestionDePedidos
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(or.getInfo());
+            this.Close();
         }
         //*************************************ACCIONES PIZZA GRANDE++++++++++++++++++++++++++++
    
@@ -101,13 +102,45 @@ namespace PizzeriaGestionDePedidos
             numericUpDown3.Visible = true;
             numericUpDown4.Visible = true;
             numericUpDown5.Visible = true;
-
+            numericUpDown6.Visible = true;
+            numericUpDown7.Visible = true;
+            numericUpDown8.Visible = true;
+            numericUpDown9.Visible = true;
+            numericUpDown10.Visible = true;
+            numericUpDown11.Visible = true;
+            numericUpDown12.Visible = true;
+            numericUpDown13.Visible = true;
+            numericUpDown14.Visible = true;
+            numericUpDown15.Visible = true;
         }
 
         private void refrescosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ListaRefrescos.Visible = true;
             labelRefrescos.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
+            refrescos1.Visible = true;
+            refrescos375.Visible = true;
+
+            numericUpDown16.Visible = true;
+            numericUpDown17.Visible = true;
+            numericUpDown18.Visible = true;
+            numericUpDown19.Visible = true;
+            numericUpDown20.Visible = true;
+            numericUpDown21.Visible = true;
+            numericUpDown22.Visible = true;
+            numericUpDown23.Visible = true;
+            numericUpDown24.Visible = true;
+            numericUpDown25.Visible = true;
+            numericUpDown26.Visible = true;
+            numericUpDown27.Visible = true;
+            numericUpDown28.Visible = true;
+            numericUpDown29.Visible = true;
+            numericUpDown30.Visible = true;
+            numericUpDown31.Visible = true;
+            numericUpDown32.Visible = true;
+            numericUpDown33.Visible = true;
         }
 
         private void ListaRefrescos_SelectedIndexChanged(object sender, EventArgs e)

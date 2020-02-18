@@ -12,6 +12,7 @@ namespace PizzeriaGestionDePedidos
 {
     public partial class ConsultarOrden : Form
     {
+        Orden or = new Orden();
         public ConsultarOrden()
         {
             InitializeComponent();

@@ -306,6 +306,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown1.TabIndex = 19;
+            this.numericUpDown1.Visible = false;
             // 
             // numericUpDown2
             // 
@@ -318,6 +319,7 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown2.TabIndex = 20;
+            this.numericUpDown2.Visible = false;
             // 
             // numericUpDown3
             // 
@@ -330,6 +332,7 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown3.TabIndex = 21;
+            this.numericUpDown3.Visible = false;
             // 
             // numericUpDown4
             // 
@@ -342,6 +345,7 @@
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown4.TabIndex = 22;
+            this.numericUpDown4.Visible = false;
             // 
             // numericUpDown5
             // 
@@ -354,6 +358,7 @@
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown5.TabIndex = 23;
+            this.numericUpDown5.Visible = false;
             // 
             // listBox1
             // 
@@ -374,6 +379,7 @@
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown6.TabIndex = 25;
+            this.numericUpDown6.Visible = false;
             // 
             // numericUpDown7
             // 
@@ -386,6 +392,7 @@
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown7.TabIndex = 26;
+            this.numericUpDown7.Visible = false;
             // 
             // numericUpDown8
             // 
@@ -398,6 +405,7 @@
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown8.TabIndex = 27;
+            this.numericUpDown8.Visible = false;
             // 
             // numericUpDown9
             // 
@@ -410,6 +418,7 @@
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown9.TabIndex = 28;
+            this.numericUpDown9.Visible = false;
             // 
             // numericUpDown10
             // 
@@ -422,6 +431,7 @@
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown10.TabIndex = 29;
+            this.numericUpDown10.Visible = false;
             // 
             // numericUpDown11
             // 
@@ -434,6 +444,7 @@
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown11.TabIndex = 30;
+            this.numericUpDown11.Visible = false;
             // 
             // numericUpDown12
             // 
@@ -446,6 +457,7 @@
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown12.TabIndex = 31;
+            this.numericUpDown12.Visible = false;
             // 
             // numericUpDown13
             // 
@@ -458,6 +470,7 @@
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown13.TabIndex = 32;
+            this.numericUpDown13.Visible = false;
             // 
             // numericUpDown14
             // 
@@ -470,6 +483,7 @@
             this.numericUpDown14.Name = "numericUpDown14";
             this.numericUpDown14.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown14.TabIndex = 33;
+            this.numericUpDown14.Visible = false;
             // 
             // numericUpDown15
             // 
@@ -482,6 +496,7 @@
             this.numericUpDown15.Name = "numericUpDown15";
             this.numericUpDown15.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown15.TabIndex = 34;
+            this.numericUpDown15.Visible = false;
             // 
             // numericUpDown16
             // 
@@ -494,6 +509,7 @@
             this.numericUpDown16.Name = "numericUpDown16";
             this.numericUpDown16.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown16.TabIndex = 35;
+            this.numericUpDown16.Visible = false;
             // 
             // numericUpDown17
             // 
@@ -506,6 +522,7 @@
             this.numericUpDown17.Name = "numericUpDown17";
             this.numericUpDown17.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown17.TabIndex = 36;
+            this.numericUpDown17.Visible = false;
             // 
             // numericUpDown18
             // 
@@ -518,6 +535,7 @@
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown18.TabIndex = 37;
+            this.numericUpDown18.Visible = false;
             // 
             // numericUpDown19
             // 
@@ -530,6 +548,7 @@
             this.numericUpDown19.Name = "numericUpDown19";
             this.numericUpDown19.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown19.TabIndex = 38;
+            this.numericUpDown19.Visible = false;
             // 
             // numericUpDown20
             // 
@@ -542,6 +561,7 @@
             this.numericUpDown20.Name = "numericUpDown20";
             this.numericUpDown20.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown20.TabIndex = 39;
+            this.numericUpDown20.Visible = false;
             // 
             // numericUpDown21
             // 
@@ -554,6 +574,7 @@
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown21.TabIndex = 40;
+            this.numericUpDown21.Visible = false;
             // 
             // refrescos1
             // 
@@ -566,9 +587,9 @@
             "7up\t\t$20",
             "Merinda\t\t$20",
             "Sangria\t\t$20"});
-            this.refrescos1.Location = new System.Drawing.Point(341, 197);
+            this.refrescos1.Location = new System.Drawing.Point(342, 197);
             this.refrescos1.Name = "refrescos1";
-            this.refrescos1.Size = new System.Drawing.Size(168, 112);
+            this.refrescos1.Size = new System.Drawing.Size(167, 112);
             this.refrescos1.TabIndex = 41;
             this.refrescos1.Visible = false;
             // 
@@ -615,7 +636,7 @@
             // 
             // numericUpDown22
             // 
-            this.numericUpDown22.Location = new System.Drawing.Point(503, 193);
+            this.numericUpDown22.Location = new System.Drawing.Point(508, 193);
             this.numericUpDown22.Maximum = new decimal(new int[] {
             10,
             0,
@@ -624,10 +645,11 @@
             this.numericUpDown22.Name = "numericUpDown22";
             this.numericUpDown22.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown22.TabIndex = 45;
+            this.numericUpDown22.Visible = false;
             // 
             // numericUpDown23
             // 
-            this.numericUpDown23.Location = new System.Drawing.Point(503, 212);
+            this.numericUpDown23.Location = new System.Drawing.Point(508, 212);
             this.numericUpDown23.Maximum = new decimal(new int[] {
             10,
             0,
@@ -636,10 +658,11 @@
             this.numericUpDown23.Name = "numericUpDown23";
             this.numericUpDown23.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown23.TabIndex = 46;
+            this.numericUpDown23.Visible = false;
             // 
             // numericUpDown24
             // 
-            this.numericUpDown24.Location = new System.Drawing.Point(503, 231);
+            this.numericUpDown24.Location = new System.Drawing.Point(508, 231);
             this.numericUpDown24.Maximum = new decimal(new int[] {
             10,
             0,
@@ -648,10 +671,11 @@
             this.numericUpDown24.Name = "numericUpDown24";
             this.numericUpDown24.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown24.TabIndex = 47;
+            this.numericUpDown24.Visible = false;
             // 
             // numericUpDown25
             // 
-            this.numericUpDown25.Location = new System.Drawing.Point(503, 250);
+            this.numericUpDown25.Location = new System.Drawing.Point(508, 250);
             this.numericUpDown25.Maximum = new decimal(new int[] {
             10,
             0,
@@ -660,10 +684,11 @@
             this.numericUpDown25.Name = "numericUpDown25";
             this.numericUpDown25.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown25.TabIndex = 48;
+            this.numericUpDown25.Visible = false;
             // 
             // numericUpDown26
             // 
-            this.numericUpDown26.Location = new System.Drawing.Point(503, 270);
+            this.numericUpDown26.Location = new System.Drawing.Point(508, 270);
             this.numericUpDown26.Maximum = new decimal(new int[] {
             10,
             0,
@@ -672,10 +697,11 @@
             this.numericUpDown26.Name = "numericUpDown26";
             this.numericUpDown26.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown26.TabIndex = 49;
+            this.numericUpDown26.Visible = false;
             // 
             // numericUpDown27
             // 
-            this.numericUpDown27.Location = new System.Drawing.Point(503, 290);
+            this.numericUpDown27.Location = new System.Drawing.Point(508, 290);
             this.numericUpDown27.Maximum = new decimal(new int[] {
             10,
             0,
@@ -684,10 +710,11 @@
             this.numericUpDown27.Name = "numericUpDown27";
             this.numericUpDown27.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown27.TabIndex = 50;
+            this.numericUpDown27.Visible = false;
             // 
             // numericUpDown28
             // 
-            this.numericUpDown28.Location = new System.Drawing.Point(503, 347);
+            this.numericUpDown28.Location = new System.Drawing.Point(508, 347);
             this.numericUpDown28.Maximum = new decimal(new int[] {
             10,
             0,
@@ -696,10 +723,11 @@
             this.numericUpDown28.Name = "numericUpDown28";
             this.numericUpDown28.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown28.TabIndex = 51;
+            this.numericUpDown28.Visible = false;
             // 
             // numericUpDown29
             // 
-            this.numericUpDown29.Location = new System.Drawing.Point(503, 365);
+            this.numericUpDown29.Location = new System.Drawing.Point(508, 365);
             this.numericUpDown29.Maximum = new decimal(new int[] {
             10,
             0,
@@ -708,10 +736,11 @@
             this.numericUpDown29.Name = "numericUpDown29";
             this.numericUpDown29.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown29.TabIndex = 52;
+            this.numericUpDown29.Visible = false;
             // 
             // numericUpDown30
             // 
-            this.numericUpDown30.Location = new System.Drawing.Point(503, 383);
+            this.numericUpDown30.Location = new System.Drawing.Point(508, 383);
             this.numericUpDown30.Maximum = new decimal(new int[] {
             10,
             0,
@@ -720,10 +749,11 @@
             this.numericUpDown30.Name = "numericUpDown30";
             this.numericUpDown30.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown30.TabIndex = 53;
+            this.numericUpDown30.Visible = false;
             // 
             // numericUpDown31
             // 
-            this.numericUpDown31.Location = new System.Drawing.Point(503, 403);
+            this.numericUpDown31.Location = new System.Drawing.Point(508, 403);
             this.numericUpDown31.Maximum = new decimal(new int[] {
             10,
             0,
@@ -732,10 +762,11 @@
             this.numericUpDown31.Name = "numericUpDown31";
             this.numericUpDown31.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown31.TabIndex = 54;
+            this.numericUpDown31.Visible = false;
             // 
             // numericUpDown32
             // 
-            this.numericUpDown32.Location = new System.Drawing.Point(503, 423);
+            this.numericUpDown32.Location = new System.Drawing.Point(508, 423);
             this.numericUpDown32.Maximum = new decimal(new int[] {
             10,
             0,
@@ -744,10 +775,11 @@
             this.numericUpDown32.Name = "numericUpDown32";
             this.numericUpDown32.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown32.TabIndex = 55;
+            this.numericUpDown32.Visible = false;
             // 
             // numericUpDown33
             // 
-            this.numericUpDown33.Location = new System.Drawing.Point(503, 443);
+            this.numericUpDown33.Location = new System.Drawing.Point(508, 443);
             this.numericUpDown33.Maximum = new decimal(new int[] {
             10,
             0,
@@ -756,6 +788,7 @@
             this.numericUpDown33.Name = "numericUpDown33";
             this.numericUpDown33.Size = new System.Drawing.Size(48, 20);
             this.numericUpDown33.TabIndex = 56;
+            this.numericUpDown33.Visible = false;
             // 
             // NuevaOrden
             // 
