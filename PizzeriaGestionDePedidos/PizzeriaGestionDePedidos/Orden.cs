@@ -11,14 +11,27 @@ namespace PizzeriaGestionDePedidos
         List<Producto> productos;
         List<int> cantidades;
         DateTime fecha;
-        static int numFicha;
+        int numFicha;
+        static int numFichas;
 
         public Orden()
         {
             productos = new List<Producto>();
             cantidades = new List<int>();
             fecha = DateTime.Now;
-            numFicha++;
+            numFicha=numFichas++;
+        }
+        public Orden(DateTime fecha,int numFicha)
+        {
+            productos = new List<Producto>();
+            cantidades = new List<int>();
+            this.fecha = fecha;
+            this.numFicha=numFicha;
+        }
+        public int NumFicha
+        {
+            get { return numFicha; }
+            set { numFicha = value; }
         }
         public void agregarProducto(Producto p,int cantidad)
         {
@@ -53,6 +66,16 @@ namespace PizzeriaGestionDePedidos
         {
             get { return id; }
             set { id = value; }
+        }
+        public List<Producto> Productos
+        {
+            get { return productos; }
+            set { productos = value; }
+        }
+        public List<int> Cantidades
+        {
+            get { return cantidades; }
+            set { cantidades = value; }
         }
     }
 }
