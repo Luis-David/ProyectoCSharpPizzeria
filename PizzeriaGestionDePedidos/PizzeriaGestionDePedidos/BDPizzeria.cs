@@ -41,7 +41,7 @@ namespace PizzeriaGestionDePedidos
             // se guardan las pizzas y refrescos
             int i = 0;
             query = "";
-            foreach (Pizza p in or.Productos)
+            foreach (Producto p in or.Productos)
             {
                 query += "insert into ";
                 query+=Object.ReferenceEquals(p.GetType(), typeof(Pizza)) ? "orden_pizzas":"orden_refrescos";

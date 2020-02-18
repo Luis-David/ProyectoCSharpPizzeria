@@ -407,7 +407,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Pepsi";
                 r.ID = 9;
                 count = Convert.ToInt32(numericUpDown17.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
             r = new Refresco();
@@ -417,7 +417,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Manzanita";
                 r.ID = 12;
                 count = Convert.ToInt32(numericUpDown18.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -428,7 +428,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "7Up";
                 r.ID = 15;
                 count = Convert.ToInt32(numericUpDown19.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -439,7 +439,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Mirinda";
                 r.ID = 18;
                 count = Convert.ToInt32(numericUpDown20.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -450,7 +450,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Sangria";
                 r.ID = 21;
                 count = Convert.ToInt32(numericUpDown21.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
             foreach (string m in ListaRefrescos.CheckedItems)
@@ -477,7 +477,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Pepsi";
                 r.ID = 10;
                 count = Convert.ToInt32(numericUpDown23.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
             r = new Refresco();
@@ -487,7 +487,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Manzanita";
                 r.ID = 13;
                 count = Convert.ToInt32(numericUpDown24.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -498,7 +498,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "7Up";
                 r.ID = 16;
                 count = Convert.ToInt32(numericUpDown25.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -509,7 +509,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Mirinda";
                 r.ID = 19;
                 count = Convert.ToInt32(numericUpDown26.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -520,7 +520,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Sangria";
                 r.ID = 22;
                 count = Convert.ToInt32(numericUpDown27.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
             foreach (string m in refrescos1.CheckedItems)
@@ -547,7 +547,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Pepsi";
                 r.ID = 11;
                 count = Convert.ToInt32(numericUpDown29.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
             r = new Refresco();
@@ -557,7 +557,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Manzanita";
                 r.ID = 14;
                 count = Convert.ToInt32(numericUpDown30.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -568,7 +568,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "7Up";
                 r.ID = 17;
                 count = Convert.ToInt32(numericUpDown31.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -579,7 +579,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Mirinda";
                 r.ID = 20;
                 count = Convert.ToInt32(numericUpDown32.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
 
@@ -590,7 +590,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Sangria";
                 r.ID = 23;
                 count = Convert.ToInt32(numericUpDown33.Value);
-                or.agregarProducto(pg, count);
+                or.agregarProducto(r, count);
                 //orden.Add(or);
             }
             foreach (string m in refrescos375.CheckedItems)
