@@ -16,14 +16,52 @@ namespace PizzeriaGestionDePedidos
         Orden or = new Orden();
         Pizza pg = new Pizza();
         Refresco r = new Refresco();
-        List<Orden> orden = new List<Orden>();
+        //List<Orden> orden = new List<Orden>();
+        List<NumericUpDown> textNumericos = new List<NumericUpDown>();
+
         int indice;
         int count = 0;
         public NuevaOrden()
         {
             InitializeComponent();
-            
+            textNumericos.Add(numericUpDown1);
+            textNumericos.Add(numericUpDown2);
+            textNumericos.Add(numericUpDown3);
+            textNumericos.Add(numericUpDown4);
+            textNumericos.Add(numericUpDown5);
+            textNumericos.Add(numericUpDown6);
+            textNumericos.Add(numericUpDown7);
+            textNumericos.Add(numericUpDown8);
+            textNumericos.Add(numericUpDown9);
+            textNumericos.Add(numericUpDown10);
+            textNumericos.Add(numericUpDown11);
+            textNumericos.Add(numericUpDown12);
+            textNumericos.Add(numericUpDown13);
+            textNumericos.Add(numericUpDown14);
+            textNumericos.Add(numericUpDown15);
+            textNumericos.Add(numericUpDown16);
+            textNumericos.Add(numericUpDown17);
+            textNumericos.Add(numericUpDown18);
+            textNumericos.Add(numericUpDown19);
+            textNumericos.Add(numericUpDown20);
+            textNumericos.Add(numericUpDown21);
+            textNumericos.Add(numericUpDown22);
+            textNumericos.Add(numericUpDown23);
+            textNumericos.Add(numericUpDown24);
+            textNumericos.Add(numericUpDown25);
+            textNumericos.Add(numericUpDown26);
+            textNumericos.Add(numericUpDown27);
+            textNumericos.Add(numericUpDown28);
+            textNumericos.Add(numericUpDown29);
+            textNumericos.Add(numericUpDown30);
+            textNumericos.Add(numericUpDown31);
+            textNumericos.Add(numericUpDown32);
+            textNumericos.Add(numericUpDown33);
 
+            foreach(NumericUpDown n in textNumericos)
+            {
+                n.Value = 1;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -308,7 +346,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Coca Cola";
                 count = Convert.ToInt32(numericUpDown16.Value);
                 or.agregarProducto(r, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -318,7 +356,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Pepsi";
                 count = Convert.ToInt32(numericUpDown17.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
             r = new Refresco();
             if (ListaRefrescos.GetItemChecked(2))
@@ -327,7 +365,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Manzanita";
                 count = Convert.ToInt32(numericUpDown18.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -337,7 +375,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "7Up";
                 count = Convert.ToInt32(numericUpDown19.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -347,7 +385,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Mirinda";
                 count = Convert.ToInt32(numericUpDown20.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -357,7 +395,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Sangria";
                 count = Convert.ToInt32(numericUpDown21.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
             foreach (string m in ListaRefrescos.CheckedItems)
             {
@@ -372,7 +410,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Coca Cola";
                 count = Convert.ToInt32(numericUpDown22.Value);
                 or.agregarProducto(r, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -382,7 +420,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Pepsi";
                 count = Convert.ToInt32(numericUpDown23.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
             r = new Refresco();
             if (refrescos1.GetItemChecked(2))
@@ -391,7 +429,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Manzanita";
                 count = Convert.ToInt32(numericUpDown24.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -401,7 +439,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "7Up";
                 count = Convert.ToInt32(numericUpDown25.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -411,7 +449,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Mirinda";
                 count = Convert.ToInt32(numericUpDown26.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -421,7 +459,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Sangria";
                 count = Convert.ToInt32(numericUpDown27.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
             foreach (string m in refrescos1.CheckedItems)
             {
@@ -436,7 +474,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Coca Cola";
                 count = Convert.ToInt32(numericUpDown28.Value);
                 or.agregarProducto(r, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -446,7 +484,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Pepsi";
                 count = Convert.ToInt32(numericUpDown29.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
             r = new Refresco();
             if (refrescos375.GetItemChecked(2))
@@ -455,7 +493,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Manzanita";
                 count = Convert.ToInt32(numericUpDown30.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -465,7 +503,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "7Up";
                 count = Convert.ToInt32(numericUpDown31.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -475,7 +513,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Mirinda";
                 count = Convert.ToInt32(numericUpDown32.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
 
             r = new Refresco();
@@ -485,7 +523,7 @@ namespace PizzeriaGestionDePedidos
                 r.Nombre = "Sangria";
                 count = Convert.ToInt32(numericUpDown33.Value);
                 or.agregarProducto(pg, count);
-                orden.Add(or);
+                //orden.Add(or);
             }
             foreach (string m in refrescos375.CheckedItems)
             {
@@ -493,6 +531,8 @@ namespace PizzeriaGestionDePedidos
             }
 
             listBox1.Items.Add("Total: " + or.getTotal());
+            BDPizzeria bd = new BDPizzeria();
+            bd.guardarOrden(or);
         }
     }
 

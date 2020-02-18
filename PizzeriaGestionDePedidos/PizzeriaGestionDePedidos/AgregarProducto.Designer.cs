@@ -80,9 +80,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 41);
+            this.label1.Font = new System.Drawing.Font("Consolas", 11.25F);
+            this.label1.Location = new System.Drawing.Point(79, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(64, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nombre:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -90,9 +91,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(103, 70);
+            this.label2.Font = new System.Drawing.Font("Consolas", 11.25F);
+            this.label2.Location = new System.Drawing.Point(79, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(64, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Precio:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -100,9 +102,10 @@
             // lbSize
             // 
             this.lbSize.AutoSize = true;
-            this.lbSize.Location = new System.Drawing.Point(94, 139);
+            this.lbSize.Font = new System.Drawing.Font("Consolas", 11.25F);
+            this.lbSize.Location = new System.Drawing.Point(79, 138);
             this.lbSize.Name = "lbSize";
-            this.lbSize.Size = new System.Drawing.Size(49, 13);
+            this.lbSize.Size = new System.Drawing.Size(64, 18);
             this.lbSize.TabIndex = 6;
             this.lbSize.Text = "Tamaño:";
             this.lbSize.Click += new System.EventHandler(this.label3_Click);
@@ -115,9 +118,10 @@
             // rbPizza
             // 
             this.rbPizza.AutoSize = true;
+            this.rbPizza.Font = new System.Drawing.Font("Consolas", 11.25F);
             this.rbPizza.Location = new System.Drawing.Point(39, 24);
             this.rbPizza.Name = "rbPizza";
-            this.rbPizza.Size = new System.Drawing.Size(50, 17);
+            this.rbPizza.Size = new System.Drawing.Size(66, 22);
             this.rbPizza.TabIndex = 7;
             this.rbPizza.TabStop = true;
             this.rbPizza.Text = "Pizza";
@@ -127,9 +131,10 @@
             // rbRefresco
             // 
             this.rbRefresco.AutoSize = true;
+            this.rbRefresco.Font = new System.Drawing.Font("Consolas", 11.25F);
             this.rbRefresco.Location = new System.Drawing.Point(39, 57);
             this.rbRefresco.Name = "rbRefresco";
-            this.rbRefresco.Size = new System.Drawing.Size(68, 17);
+            this.rbRefresco.Size = new System.Drawing.Size(90, 22);
             this.rbRefresco.TabIndex = 8;
             this.rbRefresco.TabStop = true;
             this.rbRefresco.Text = "Refresco";
@@ -180,20 +185,24 @@
             // lbLitros
             // 
             this.lbLitros.AutoSize = true;
-            this.lbLitros.Location = new System.Drawing.Point(103, 139);
+            this.lbLitros.Font = new System.Drawing.Font("Consolas", 11.25F);
+            this.lbLitros.Location = new System.Drawing.Point(79, 139);
             this.lbLitros.Name = "lbLitros";
-            this.lbLitros.Size = new System.Drawing.Size(35, 13);
+            this.lbLitros.Size = new System.Drawing.Size(64, 18);
             this.lbLitros.TabIndex = 12;
             this.lbLitros.Text = "Litros:";
             // 
             // btImagen
             // 
+            this.btImagen.BackColor = System.Drawing.Color.IndianRed;
+            this.btImagen.Font = new System.Drawing.Font("Consolas", 11.25F);
+            this.btImagen.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btImagen.Location = new System.Drawing.Point(80, 256);
             this.btImagen.Name = "btImagen";
-            this.btImagen.Size = new System.Drawing.Size(169, 23);
+            this.btImagen.Size = new System.Drawing.Size(169, 33);
             this.btImagen.TabIndex = 11;
             this.btImagen.Text = "Cargar Imagen";
-            this.btImagen.UseVisualStyleBackColor = true;
+            this.btImagen.UseVisualStyleBackColor = false;
             this.btImagen.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbDescripcion
@@ -206,18 +215,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(77, 109);
+            this.label3.Font = new System.Drawing.Font("Consolas", 11.25F);
+            this.label3.Location = new System.Drawing.Point(39, 106);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(104, 18);
             this.label3.TabIndex = 9;
             this.label3.Text = "Descripción:";
             // 
             // lbIngredientes
             // 
             this.lbIngredientes.AutoSize = true;
-            this.lbIngredientes.Location = new System.Drawing.Point(75, 174);
+            this.lbIngredientes.Font = new System.Drawing.Font("Consolas", 11.25F);
+            this.lbIngredientes.Location = new System.Drawing.Point(31, 174);
             this.lbIngredientes.Name = "lbIngredientes";
-            this.lbIngredientes.Size = new System.Drawing.Size(68, 13);
+            this.lbIngredientes.Size = new System.Drawing.Size(112, 18);
             this.lbIngredientes.TabIndex = 8;
             this.lbIngredientes.Text = "Ingredientes:";
             // 

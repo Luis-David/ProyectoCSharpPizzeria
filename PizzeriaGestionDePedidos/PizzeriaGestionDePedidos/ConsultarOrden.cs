@@ -36,10 +36,10 @@ namespace PizzeriaGestionDePedidos
             }
             //label2.Text = contenido;
             label2.Visible = true;
-            for (int i = 0; i < contenido; i++)
+           /* for (int i = 0; i < contenido; i++)
             {
                 label2.Text = "Numero de pedido: " + (i + 1).ToString() + or.getInfo();
-            }
+            }*/
         }
     }
 }

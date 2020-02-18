@@ -25,8 +25,8 @@ namespace PizzeriaGestionDePedidos
         {
             con.Open();
             //Se guarda la orden en la base de datos
-            string query = "insert into orden (fecha,numFicha) values (";
-            query += "'" +DateTime.Now+ "'"+or.NumFicha+"')";
+            string query = "insert into orden (fecha,num_ficha) values (";
+            query +="'"+ DateTime.Now+ "',"+or.NumFicha+")";
             coman = new NpgsqlCommand(query, con);
             coman.ExecuteNonQuery();
 
