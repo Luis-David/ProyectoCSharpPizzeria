@@ -46,6 +46,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaOrdenToolStripMenuItem,
             this.consultarOrdenToolStripMenuItem,
@@ -54,42 +55,42 @@
             this.creditosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(677, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(571, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // nuevaOrdenToolStripMenuItem
             // 
             this.nuevaOrdenToolStripMenuItem.Name = "nuevaOrdenToolStripMenuItem";
-            this.nuevaOrdenToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.nuevaOrdenToolStripMenuItem.Size = new System.Drawing.Size(102, 21);
             this.nuevaOrdenToolStripMenuItem.Text = "Nueva Orden ";
             this.nuevaOrdenToolStripMenuItem.Click += new System.EventHandler(this.nuevaOrdenToolStripMenuItem_Click);
             // 
             // consultarOrdenToolStripMenuItem
             // 
             this.consultarOrdenToolStripMenuItem.Name = "consultarOrdenToolStripMenuItem";
-            this.consultarOrdenToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.consultarOrdenToolStripMenuItem.Size = new System.Drawing.Size(116, 21);
             this.consultarOrdenToolStripMenuItem.Text = "Consultar Orden";
             this.consultarOrdenToolStripMenuItem.Click += new System.EventHandler(this.consultarOrdenToolStripMenuItem_Click);
             // 
             // verTodasLasOrdenesToolStripMenuItem
             // 
             this.verTodasLasOrdenesToolStripMenuItem.Name = "verTodasLasOrdenesToolStripMenuItem";
-            this.verTodasLasOrdenesToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
+            this.verTodasLasOrdenesToolStripMenuItem.Size = new System.Drawing.Size(148, 21);
             this.verTodasLasOrdenesToolStripMenuItem.Text = "Ver todas las ordenes";
             this.verTodasLasOrdenesToolStripMenuItem.Click += new System.EventHandler(this.verTodasLasOrdenesToolStripMenuItem_Click);
             // 
             // ampliarOrdenToolStripMenuItem
             // 
             this.ampliarOrdenToolStripMenuItem.Name = "ampliarOrdenToolStripMenuItem";
-            this.ampliarOrdenToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
+            this.ampliarOrdenToolStripMenuItem.Size = new System.Drawing.Size(122, 21);
             this.ampliarOrdenToolStripMenuItem.Text = "Ampliar Catálogo";
             this.ampliarOrdenToolStripMenuItem.Click += new System.EventHandler(this.ampliarOrdenToolStripMenuItem_Click);
             // 
             // creditosToolStripMenuItem
             // 
             this.creditosToolStripMenuItem.Name = "creditosToolStripMenuItem";
-            this.creditosToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.creditosToolStripMenuItem.Size = new System.Drawing.Size(69, 21);
             this.creditosToolStripMenuItem.Text = "Creditos";
             this.creditosToolStripMenuItem.Click += new System.EventHandler(this.creditosToolStripMenuItem_Click);
             // 
@@ -115,7 +116,7 @@
             this.pictureBox3.ErrorImage = null;
             this.pictureBox3.Image = global::PizzeriaGestionDePedidos.Properties.Resources.dominos_pizza_cyber_monday;
             this.pictureBox3.InitialImage = global::PizzeriaGestionDePedidos.Properties.Resources.dominos_pizza_cyber_monday;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox3.Location = new System.Drawing.Point(15, 27);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(538, 312);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(677, 342);
+            this.ClientSize = new System.Drawing.Size(571, 342);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

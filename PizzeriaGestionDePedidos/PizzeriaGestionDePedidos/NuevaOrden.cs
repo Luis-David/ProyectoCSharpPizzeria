@@ -81,7 +81,6 @@ namespace PizzeriaGestionDePedidos
             else
                 MessageBox.Show("Debes de verificar la orden antes de finalizarla.");
 
-            this.Close();
         }
         //*************************************ACCIONES PIZZA GRANDE++++++++++++++++++++++++++++
    
