@@ -80,12 +80,12 @@ namespace PizzeriaGestionDePedidos
                 sw.WriteLine(or.NumFicha + 1);
                 sw.Close();
                 MessageBox.Show(or.getInfo());
-                bd.guardarOrden(or); 
+                bd.guardarOrden(or);
+                this.Close();
             }
             else
                 MessageBox.Show("Debes de verificar la orden antes de finalizarla.");
 
-            this.Close();
         }
         //*************************************ACCIONES PIZZA GRANDE++++++++++++++++++++++++++++
    
