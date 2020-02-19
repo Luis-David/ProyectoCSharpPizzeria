@@ -8,7 +8,19 @@ Proyecto de gestión de pedidos de una pizzería
 
 ## Introducción
 
+La Pizzeria El Becario
 
+Nuestro proyecto versa sobre un sistema informático para la gestión de ordenes de una pizzeria (El becario), este sistema será operado por personal de la pizzeria para tomar los pedidos de los clientes. Consta de un menu principal cuyas secciones son: 
+
+-Nueva Orden: En esta sección se crean las ordenes dandole a escoger al operador el tamaño de la pizza, la especilidad y agregar un refresco de diferentes tamaños y marcas, aqui se puede escoger tanto la cantidad de pizzas como la cantidad de refrescos que llevará la orden. El operador podrá ver un cuandro con la descripción de los productos seleccionados para la orden para confirmar que son correctos para posteriormente finalizar la orden, al finalizar la orden se genera un número de ficha que contiene toda la información del pedido.
+
+-Consultar Orden: Para consultar las ordenes se debe ingresar el número de ficha que se genero al finalizar la orden, se muestra una descripción de los productos, la fecha, la hora y el total de la orden.
+
+-Ver todas las ordenes: Aqui se listan todas las ordenes previamente generadas
+
+-Ampliar catálogo: En esta parte se puede ampliar el catalogo de pizzas o refrescos que se van a vender, con el fin de estar siempre actualizado con las especilidades más solicitadas por los clientes.
+
+-Creditos: Aqui se visualizan los autores del sistema.
 
 ## IMPORTANTE
 
