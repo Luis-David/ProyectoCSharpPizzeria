@@ -1,6 +1,13 @@
 # ProyectoCSharpPizzeria
 Proyecto de gestión de pedidos de una pizzería
 
+## Autores:
+- Luis David Barragán Ramírez
+- Oscar
+- Damian
+
+## Introducción
+
 
 
 Antes de ejecutar el proyecto en Visual Studio se debe de realizar las siguientes
@@ -20,7 +27,7 @@ en Visual Studio e iremos a esta ruta Tools->NuGet Package Manage->Manage NuGet 
 Despues debemos escribir postgres y seleccionar el driver Npgsql y lo instalamos,
 la siguiente imagen ilustra lo anterior:
 
-![archivo](img/1.png  "NuGet2")
+![archivo](img/1.PNG  "NuGet2")
 
 
 Ahora necesitamos importar la base de datos pizzeria, para esto
