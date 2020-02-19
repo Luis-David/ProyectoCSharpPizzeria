@@ -77,5 +77,11 @@ namespace PizzeriaGestionDePedidos
             get { return cantidades; }
             set { cantidades = value; }
         }
+
+        public DateTime Fecha
+        {
+            get { return fecha; }
+            set { fecha = value; }
+        }
     }
 }
