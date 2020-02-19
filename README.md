@@ -56,4 +56,8 @@ así como se muestra en la siguiente imagen:
 
 ![archivo](img/3.png  "BD2")
 
+## Diagrama de Clases
+
+![archivo](img/4.png  "C")
+
 
