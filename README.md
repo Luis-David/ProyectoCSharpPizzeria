@@ -10,6 +10,8 @@ Proyecto de gestión de pedidos de una pizzería
 
 
 
+## IMPORTANTE
+
 Antes de ejecutar el proyecto en Visual Studio se debe de realizar las siguientes
 instrucciones:
 
