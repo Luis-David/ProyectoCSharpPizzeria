@@ -3,7 +3,7 @@ Proyecto de gestión de pedidos de una pizzería
 
 ## Autores:
 - Luis David Barragán Ramírez
-- Oscar
+- Oscar Ignacio Vásquez
 - Damian Matuz Cristino
 
 ## Introducción
