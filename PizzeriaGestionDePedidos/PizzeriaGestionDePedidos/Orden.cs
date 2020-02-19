@@ -10,7 +10,7 @@ namespace PizzeriaGestionDePedidos
         long id;
         List<Producto> productos;
         List<int> cantidades;
-        DateTime fecha;
+        string fecha;
         int numFicha;
         static int numFichas;
 
@@ -18,10 +18,10 @@ namespace PizzeriaGestionDePedidos
         {
             productos = new List<Producto>();
             cantidades = new List<int>();
-            fecha = DateTime.Now;
+            fecha = DateTime.Now.ToString();
             numFicha=numFichas++;
         }
-        public Orden(DateTime fecha,int numFicha)
+        public Orden(string fecha,int numFicha)
         {
             productos = new List<Producto>();
             cantidades = new List<int>();
@@ -78,7 +78,7 @@ namespace PizzeriaGestionDePedidos
             set { cantidades = value; }
         }
 
-        public DateTime Fecha
+        public string Fecha
         {
             get { return fecha; }
             set { fecha = value; }

@@ -29,7 +29,7 @@ namespace PizzeriaGestionDePedidos
             string query = "insert into orden (fecha,num_ficha) values (";
 
             query +="'"+ DateTime.Now.ToString("G",
-                  CultureInfo.CreateSpecificCulture("en-us")) + "',"+or.NumFicha+")";
+                  CultureInfo.CreateSpecificCulture("en-us")).ToString() + "',"+or.NumFicha+")";
             coman = new NpgsqlCommand(query, con);
             coman.ExecuteNonQuery();
 
@@ -70,7 +70,7 @@ namespace PizzeriaGestionDePedidos
             Refresco refrescos;
             foreach (DataRow rowOrden in tOrden.Rows)
             {
-                orden = new Orden(Convert.ToDateTime(rowOrden["fecha"]), Convert.ToInt32(rowOrden["num_ficha"]));
+                orden = new Orden((string)rowOrden["fecha"], Convert.ToInt32(rowOrden["num_ficha"]));
                 orden.ID = Convert.ToInt64(rowOrden["id"]);
                 coman = new NpgsqlCommand("select * from orden_pizzas where fk_orden=" + orden.ID + ";", con);
                 resp = new NpgsqlDataAdapter(coman);
