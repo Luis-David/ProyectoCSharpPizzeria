@@ -74,7 +74,11 @@ namespace PizzeriaGestionDePedidos
         {
 
             //Se guarda la orden si hay almenos un producto registrado.
-            if (or.Productos.Count > 0) { 
+            if (or.Productos.Count > 0) {
+                StreamWriter sw;
+                sw = new StreamWriter("ficha.txt");
+                sw.WriteLine(or.NumFicha + 1);
+                sw.Close();
                 MessageBox.Show(or.getInfo());
                 bd.guardarOrden(or); 
             }
@@ -604,8 +608,24 @@ namespace PizzeriaGestionDePedidos
             {
                 listBox1.Items.Add(m);
             }
+            StreamReader sr;
+            if (File.Exists("ficha.txt"))
+            {
+                sr = new StreamReader("ficha.txt");
+                or.NumFicha = Convert.ToInt32(sr.ReadLine());
+                //Si el número de fichas es mayor a 100 se vuelve a contar desde 1
+                if (or.NumFicha > 100)
+                {
+                    or.NumFicha = 1;
+                }
+                sr.Close();
+            }
+            else
+                or.NumFicha = 1;
 
-            listBox1.Items.Add("Total: " + or.getTotal());
+            listBox1.Items.Add("Número de ficha: " + or.NumFicha);
+            listBox1.Items.Add("");
+            listBox1.Items.Add("\tTotal: " + or.getTotal());
             
         }
     }

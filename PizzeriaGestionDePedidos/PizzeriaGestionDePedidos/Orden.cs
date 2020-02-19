@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 namespace PizzeriaGestionDePedidos
 {
     class Orden
@@ -12,14 +13,12 @@ namespace PizzeriaGestionDePedidos
         List<int> cantidades;
         string fecha;
         int numFicha;
-        static int numFichas;
 
         public Orden()
         {
             productos = new List<Producto>();
             cantidades = new List<int>();
             fecha = DateTime.Now.ToString();
-            numFicha=numFichas++;
         }
         public Orden(string fecha,int numFicha)
         {
@@ -83,5 +82,6 @@ namespace PizzeriaGestionDePedidos
             get { return fecha; }
             set { fecha = value; }
         }
+
     }
 }
