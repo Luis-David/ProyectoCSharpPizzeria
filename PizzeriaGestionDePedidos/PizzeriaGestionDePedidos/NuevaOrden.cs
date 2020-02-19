@@ -76,7 +76,8 @@ namespace PizzeriaGestionDePedidos
             //Se guarda la orden si hay almenos un producto registrado.
             if (or.Productos.Count > 0) { 
                 MessageBox.Show(or.getInfo());
-                bd.guardarOrden(or); 
+                bd.guardarOrden(or);
+                this.Close();
             }
             else
                 MessageBox.Show("Debes de verificar la orden antes de finalizarla.");
