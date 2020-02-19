@@ -23,8 +23,8 @@ la siguiente imagen ilustra lo anterior:
 ![archivo](img/1.png  "NuGet2")
 
 
-Ahora necesitamos importar la base de datos pizzas, para esto
-es necesario abrir PGAdmin y crear una base de datos con el nombre "pizza",
+Ahora necesitamos importar la base de datos pizzeria, para esto
+es necesario abrir PGAdmin y crear una base de datos con el nombre "pizzeria",
 seleccionamos nuestra nueva base de datos, le damos click derecho y seleccionamos
 restor, así como se muestra en la siguiente imagen:
 
