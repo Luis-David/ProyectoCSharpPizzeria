@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace PizzeriaGestionDePedidos
 {
@@ -26,7 +27,9 @@ namespace PizzeriaGestionDePedidos
             con.Open();
             //Se guarda la orden en la base de datos
             string query = "insert into orden (fecha,num_ficha) values (";
-            query +="'"+ DateTime.Now+ "',"+or.NumFicha+")";
+
+            query +="'"+ DateTime.Now.ToString("G",
+                  CultureInfo.CreateSpecificCulture("en-us")) + "',"+or.NumFicha+")";
             coman = new NpgsqlCommand(query, con);
             coman.ExecuteNonQuery();
 

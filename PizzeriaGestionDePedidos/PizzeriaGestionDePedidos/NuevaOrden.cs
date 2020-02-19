@@ -72,8 +72,15 @@ namespace PizzeriaGestionDePedidos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(or.getInfo());
-            bd.guardarOrden(or);
+
+            //Se guarda la orden si hay almenos un producto registrado.
+            if (or.Productos.Count > 0) { 
+                MessageBox.Show(or.getInfo());
+                bd.guardarOrden(or); 
+            }
+            else
+                MessageBox.Show("Debes de verificar la orden antes de finalizarla.");
+
             this.Close();
         }
         //*************************************ACCIONES PIZZA GRANDE++++++++++++++++++++++++++++
