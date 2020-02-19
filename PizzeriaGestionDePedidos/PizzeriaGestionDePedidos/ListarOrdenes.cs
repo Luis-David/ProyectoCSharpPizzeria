@@ -43,6 +43,8 @@ namespace PizzeriaGestionDePedidos
                     {
                         listBox1.Items.Add("Nombre: " + x.Nombre + "\n Precio: $" + x.Precio + "\n Cantidad: " + o.Cantidades[i++]);
                     }
+                    listBox1.Items.Add("Total: $" + o.getTotal());
+
                     listBox1.Items.Add("------------------------------------------------------------------------------------------");
                 }
             }

@@ -12,7 +12,7 @@ namespace PizzeriaGestionDePedidos
 {
     public partial class ConsultarOrden : Form
     {
-        Orden or = new Orden();
+        BDPizzeria bDPizzeria = new BDPizzeria();
         public ConsultarOrden()
         {
             InitializeComponent();
@@ -35,12 +35,27 @@ namespace PizzeriaGestionDePedidos
             {
                 MessageBox.Show("Debe ingresar un numero");
             }
-            //label2.Text = contenido;
-            label2.Visible = true;
-           /* for (int i = 0; i < contenido; i++)
+            foreach (Orden o in bDPizzeria.getOrdenes())
             {
-                label2.Text = "Numero de pedido: " + (i + 1).ToString() + or.getInfo();
-            }*/
+                if (contenido == o.NumFicha)
+                {
+
+                    listBox1.Items.Add("Fecha: " + o.Fecha);
+                    listBox1.Items.Add("Numero de Ficha: " + o.NumFicha);
+
+                    int i = 0;
+                    foreach (Producto x in o.Productos)
+                    {
+                        listBox1.Items.Add("Nombre: " + x.Nombre + "\n Precio: $" + x.Precio + "\n Cantidad: " + o.Cantidades[i++]);
+                    }
+                    listBox1.Items.Add("Total: $" + o.getTotal());
+                }
+                else
+                {
+                    MessageBox.Show("Esa ficha no existe");
+                }
+
+            }
         }
     }
 }
