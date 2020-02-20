@@ -60,6 +60,6 @@ Y con esto ya se podrá ejecutar el proyecto de forma correcta.
 
 ## Diagrama de Clases
 
-![archivo](img/4.png  "C")
+![archivo](img/5.png  "C")
 
 
